@@ -1,0 +1,42 @@
+﻿#info
+{
+		color: DarkOliveGreen;
+		font-size: 20px;
+		padding: 20px;
+		padding-top: 50px;
+		text-align: justify;
+		float: left;
+		width: 960px;
+		height: auto;
+		background-color: DarkKhaki;
+}
+
+#info a
+{
+		text-decoration: none;
+}
+#info a:visited{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#info a:link{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#info a:active{color:darkolivegreen; font-weight: bold; font-size: 20px} 
+
+#formular
+{
+		margin-left: 330px;
+		font-size: 23px;
+		color: darkolivegreen;
+		position: relative;
+		padding-bottom: 20px;
+		
+}
+#privac
+{
+		font-size: 15px;
+		width: 350px;
+		margin-bottom: 20px;
+		margin-top: -10px;
+}
+#botones
+{
+		cursor: hand;
+		cursor: pointer;
+}

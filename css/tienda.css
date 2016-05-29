@@ -1,0 +1,76 @@
+﻿		.info
+		{
+					color: DarkOliveGreen;
+					font-size: 20px;
+					padding: 20px;
+					padding-top: 50px;
+					text-align: justify;
+					float: left;
+					width: 960px;
+					height: auto;
+					background-color: DarkKhaki;
+						
+		}
+		h1
+		{
+					font-size: 30px;
+					text-align: center;
+		}
+		#elegir
+		{
+					float: left;
+					background-color: darkkhaki;
+					width: 980px;
+					height: auto;
+					color: DarkOliveGreen;
+					padding-left: 10px;
+					padding-right: 10px;
+					
+		}
+		#elige
+		{
+					float: left;
+					background-color: darkkhaki;
+							
+					
+		}
+		
+		#peluche
+		{
+					width: 300px;
+					height: 200px;
+					background-color: beige;
+					float: left;
+					margin-left: 300px;
+					border: 1px solid black;
+		}
+		#imgn
+		{
+					width: 300px;
+					height: 200px;
+					
+		}
+		#datospersonales
+		{
+					float: left;
+					background-color: darkkhaki;
+					width: 980px;
+					height: auto;
+					color: DarkOliveGreen;
+					padding-left: 10px;
+					padding-right: 10px;
+		}
+		#aster
+		{
+					color: black;
+					font-size: 15px;
+		}
+		#enviar
+		{
+					float: left;
+					background-color: darkkhaki;
+					width: 960px;
+					color: DarkOliveGreen;
+					padding: 20px;
+					
+		}

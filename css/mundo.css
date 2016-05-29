@@ -1,0 +1,77 @@
+﻿			h1
+			{
+						font-size: 30px;
+						text-align: center;
+						color: DarkOliveGreen;
+			}
+			.info
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						padding: 20px;
+						padding-top: 50px;
+						text-align: justify;
+						float: left;
+						width: 960px;
+						height: auto;
+						background-color: DarkKhaki;
+						
+						
+			}
+			/* .info a
+			{
+						text-decoration: none;
+			}
+			.proy p
+			{
+						margin-left: -50px;			
+						padding-right: 50px;
+			} */
+.info a:visited{color:DarkOliveGreen; font-weight: bold; font-size: 20px}
+.info a:link{color:DarkOliveGreen; font-weight: bold; font-size: 20px}
+.info a:active{color:DarkOliveGreen; font-weight: bold; font-size: 20px}
+			#immp
+			{
+						margin-left: 180px;
+			}
+			#gal
+			{
+						display: none;
+			}
+			#sanabria
+			{
+						display: none;
+			}
+			#jarama
+			{
+						display: none;
+			}
+			#valdetorres
+			{
+						display: none;
+			}
+			#immp2
+			{
+						margin-left: 75px;
+			}
+			#usa
+			{
+						display: none;
+			}
+			#brasil
+			{
+						display: none;
+			}
+			#alemania
+			{
+						display: none;
+			}
+			#safrica
+			{
+						display: none;
+			}
+			#china
+			{
+						display: none;
+			}
+			

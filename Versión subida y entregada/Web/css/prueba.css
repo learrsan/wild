@@ -1,0 +1,23 @@
+﻿/* Información */
+			.info
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						/* padding: 20px; */
+						padding-top: 50px;
+						text-align: justify;
+						float: left;
+						background-color: red;
+						width: 1000px;
+						height: 500px;
+			}
+			.imagenes
+			{
+						background-color: blue;
+						width: 1000px;
+						height: 50px;
+						float: left;
+			}
+			
+
+			

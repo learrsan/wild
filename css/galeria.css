@@ -1,0 +1,131 @@
+﻿#info
+{
+		position: relative;
+		background-color: darkkhaki;
+		width: 950px;
+		
+		margin: auto;
+
+}
+#grande
+{
+		position: absolute;
+		background-color: darkkhaki;
+		width: 600px;
+		height: 400px;
+		margin-left: 175px;
+		margin-top: 30px;
+}
+/*.grand
+{
+		width: 600px;
+		height: 400px;
+}*/
+ #grand1
+{
+		width: 600px;
+		height: 400px;
+		
+}
+#grand2
+{
+		width: 600px;
+		height: 400px;
+		
+		
+} 
+.peq
+{
+		width: 150px;
+		height: 100px;
+}
+#peq1
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 500px;
+		margin-left: 50px;
+}
+#peq2
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 500px;
+		margin-left: 225px;
+}
+#peq3
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 500px;
+		margin-left: 400px;
+}
+#peq4
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 500px;
+		margin-left: 575px;
+}
+#peq5
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 500px;
+		margin-left: 750px;
+}
+#peq6
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 625px;
+		margin-left: 50px;
+}
+#peq7
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 625px;
+		margin-left: 225px;
+}
+#peq8
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 625px;
+		margin-left: 400px;
+}
+#peq9
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 625px;
+		margin-left: 575px;
+}
+#peq10
+{
+		background-color: darkkhaki;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		margin-top: 625px;
+		margin-left: 750px;
+}

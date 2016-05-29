@@ -1,0 +1,294 @@
+﻿body
+{
+			background-color: beige;
+			margin:0;
+			/* font-family: 'Maven Pro', sans-serif; */
+			font-family: 'Special Elite', cursive;
+}
+
+#contenedor
+{			margin: 0 auto;
+			width: 1000px;
+			height: auto;
+			background-color: red;
+				
+}
+.seccion
+{
+			font-size: 40px;
+			color: DarkKhaki;
+			background-color: DarkOliveGreen;
+			text-align: center;
+			margin: auto;
+			border-radius: 0 0 50% 50%; 
+}
+
+/*Menú*/
+			#menu
+			{
+						float:left;
+						width:1000px;
+						height:50px;
+						background-color: DarkOliveGreen;
+						
+						
+			}
+			.navegacion
+			{
+						padding:0px 20px;
+						margin:6px;
+			}
+			ul
+			{
+						padding:0px;
+						margin:0px 
+			}
+            li 
+			{
+						list-style: none; 
+						float:left;
+            }
+            .navegacion a 
+			{
+						text-decoration: none;
+				
+            }
+            .navegacion > li 
+			{
+						float: left;
+						width: 150px;
+						height: 10px;
+						display: block;
+						font-size:18px;
+             
+            }
+             .navegacion > li a 
+			{
+						color: beige;
+						width: 160px;
+						height: 30px;
+						padding: 5px;
+						display: block;
+						text-align: center; 
+            } 
+            .navegacion li a:hover 
+			{
+						background-color: DarkKhaki;
+						color: DarkOliveGreen;
+            }
+            .navegacion li ul 
+			{
+						background-color: #778959;
+						color: beige;
+						display: none;
+            }
+            .navegacion li ul a:hover 
+			{
+						background-color: beige;
+						color: DarkOliveGreen;              
+            }
+            .navegacion li:hover ul 
+			{
+						position: absolute;
+						display: inline;
+						
+            }
+/* Redes sociales */
+			#fb
+			{
+						float: left;
+						padding-left: 30px;
+						padding-top: 6px;
+						border-radius: 800px;
+			}
+			#tw
+			{
+						float: left;
+						padding-left: 20px;
+						padding-top: 6px;
+			}
+			#gp
+			{
+						float: left;
+						padding-left: 20px;
+						padding-top: 6px;
+			}
+			#yt
+			{
+						float: left;
+						padding-left: 20px;
+						padding-top: 5px;
+			}
+
+/* Cabecera */
+			#cabecera
+			{
+						width: 1000px;
+						height: 200px;
+						background-color: DarkOliveGreen;
+						
+						
+						
+						
+						
+						
+			}
+			#cabsup
+			{
+						width: 1000px;
+						height: 30px;
+						background-color: DarkOliveGreen;
+					/* 	float: left; */
+						position: fixed;
+						z-index: 1;
+						
+											
+			}
+			
+			#cabizq
+			{
+						width: 200px;
+						height: 150px;
+						background-color: DarkOliveGreen;
+						float: left;
+						padding-top: 50px;
+						display: none;
+						opacity: 1;
+						
+			}
+			#cabder
+			{
+						width: 800px;
+						height: 115px;
+						background-color: DarkOliveGreen;
+						float:left;
+						color: beige;
+						font-size: 90px;
+						text-align: center;
+						padding-top: 85px;
+						font-family: 'Special Elite', cursive;
+			}
+			
+
+
+/* Contenido */
+			#contenido
+			{
+						width: 1000px;
+						height: auto;
+						background-color: DarkKhaki;
+										
+			}
+
+			
+/* pie */
+			.pie
+			{
+						width: 1000px;
+						height: auto;
+						background-color: DarkOliveGreen;
+						text-align: center;
+						font-size: 15px;
+						margin: 0 auto;
+						padding-top: 10px;
+						float: left;
+						position: relative;
+						
+			}
+			#menupie
+			{
+						float: left;
+						background-color: DarkOliveGreen;
+						width: 1000px;
+						margin-bottom: 10px;
+						color: DarkKhaki;
+			}
+#menupie:visited{color:DarkKhaki; font-size: 15px}
+#menupie:link{color:DarkKhaki; font-size: 15px}
+#menupie:active{color:DarkKhaki; font-size: 15px}
+			
+			#menupie a
+			{
+						text-decoration: none;
+						color: DarkKhaki;
+						
+			}
+			#menupie li
+			{
+						margin-top: -10px;
+						
+			}
+			
+			#menupie h3
+			{
+						background-color: #778959;
+						color: beige;
+			}
+			
+			
+			.conoc
+			{
+						float: left;
+						margin-left: 80px;
+					
+			}
+			
+			.proy
+			{
+						float: left;
+						margin-left: 70px;
+			}
+			.infor
+			{
+						float: left;
+						margin-left: 70px;
+			}
+			.colab
+			{
+						float: left;
+						margin-left: 70px;
+			}
+			.contac
+			{
+						float: left;
+						margin-left: 70px;
+			}
+			#btnpie
+			{
+						float: left;
+						margin-top: 20px;
+						position: absolute;
+						margin-left: 900px;
+						color: DarkKhaki;
+						font-family: arial;
+						font-size: 20px;
+						margin-bottom: 10px;
+						
+			}
+			#textoprivacidad
+			{
+						display: none;
+						
+			}
+			#privacidad
+			{
+						cursor: pointer;
+						cursor: hand;
+						color: DarkKhaki;
+						font-family: arial;
+						font-size: 17px;
+						
+			}
+			#textoaviso
+			{
+						display: none;
+			}
+			#aviso
+			{
+						cursor: pointer;
+						cursor: hand;
+						margin-left: 600px;
+						color: DarkKhaki;
+						font-family: arial;
+						font-size: 17px;
+			}

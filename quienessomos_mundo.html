@@ -1,0 +1,358 @@
+﻿<html>
+	<head>
+	
+		<title>WildFriends | En el mundo</title>
+		<link rel="stylesheet" href="css/WFestilo.css" type="text/css"/>
+		<link rel="stylesheet" href="css/mundo.css" type="text/css"/>
+		
+		<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<link type="text/css" href="css/jquery-ui.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+<!--	 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+		<link rel="shortcut icon" href="favicon.ico">
+	
+	</head>
+	
+	<body>
+	
+		<script type="text/javascript">
+							
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+			
+						
+			function inicializar ()	{
+				var x;
+				x=$("#cabizq");
+				x.fadeIn(2000);
+				
+				var x;
+				x=$("#aviso");
+				x.click(mostrarAviso);
+				
+				var x;
+				x=$("#privacidad");
+				x.click(mostrarPriv);
+								
+			}
+				function mostrarAviso(){
+					var x;
+					x=$("#textoaviso");
+					x.dialog({modal:true, "title":"Aviso legal", "width": "800px"});
+				}
+				
+				function mostrarPriv(){
+					var x;
+					x=$("#textoprivacidad");
+					x.dialog({modal:true, "title":"Política de privacidad", "width": "800px", "height": "auto"});
+				}
+				
+				function galicia(){
+				var x;
+				x=$("#gal");
+				x.dialog({"title":"Proyectos en Galicia", "width": "800px"});
+				}
+				
+				function castyleon(){
+				var x;
+				x=$("#sanabria");
+				x.dialog({"title":"Proyectos en Castilla y León", "width": "800px"});
+				}
+				
+				function madrid(){
+				var x;
+				x=$("#jarama");
+				x.dialog({"title":"Proyectos en Madrid", "width": "800px"});
+				}
+				
+				function usa(){
+				var x;
+				x=$("#usa");
+				x.dialog({"title":"Proyectos en Estados Unidos", "width": "800px"});
+				}
+				
+				function brasil(){
+				var x;
+				x=$("#brasil");
+				x.dialog({"title":"Proyectos en Brasil", "width": "800px"});
+				}
+				
+				function alemania(){
+				var x;
+				x=$("#alemania");
+				x.dialog({"title":"Proyectos en Alemania", "width": "800px"});
+				}
+				
+				function safrica(){
+				var x;
+				x=$("#safrica");
+				x.dialog({"title":"Proyectos en Sudáfrica", "width": "800px"});
+				}
+				
+				function china(){
+				var x;
+				x=$("#china");
+				x.dialog({"title":"Proyectos en China", "width": "800px"});
+				}
+			
+		</script>	
+				
+				
+		
+		
+			<div id="contenedor">
+				
+				<div id="cabecera">
+				
+					<div id="cabsup">
+				<!-- 	Menú -->
+						<div id="menu">
+						 <ul class="navegacion">
+													
+						
+							<li><a>Conócenos</a>
+							
+								<ul>
+									<li><a href="index.html">Quiénes somos</a></li><br/>
+									<li><a href="quienessomos_historia.html">Historia</a></li><br/>
+									<li><a href="quienessomos_mundo.html">WF en el mundo</a></li><br/>
+								
+								</ul>		
+													
+							
+							</li>				
+						
+							
+							<li><a>Proyectos</a>
+							
+								<ul>
+								
+									<li><a href="proyectos_acuaticos.html">Sist. acuáticos</a></li><br/>
+									<li><a href="proyectos_terrestres.html">Sist. terrestres</a></li><br/>
+									<li><a href="proyectos_galeria.html">Galería</a></li><br/>
+									<li><a href="proyectos_ninos.html">Para niños</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Infórmate</a>
+							
+								<ul>
+								
+									<li><a href="informate_eventos.html">Eventos</a></li><br/>
+									<li><a href="informate_noticias.html">Noticias</a></li><br/>
+									<li><a href="informate_trabaja.html">Trabajo</a></li><br/>
+									<li><a href="informate_listaroja.html">Lista Roja IUCN</a></li><br/>
+									<li><a href="informate_faq.html">FAQ</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Colabora</a>
+							
+								<ul>
+									<li><a href="colabora_donaciones.html">Donaciones</a></li><br/>
+									<li><a href="colabora_voluntariado.html">Voluntariado</a></li><br/>
+									<li><a href="colabora_tienda.html">Tienda</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Contacto</a>
+									
+									<ul>
+									<li><a href="contacto_cuentanos.php">Cuéntanos</a></li>
+									</ul>
+												
+								</li>
+						
+						</ul>
+						<!-- Redes sociales -->
+							<div id="fb"><a href="https://es-es.facebook.com/" target="_blank"><img src="imagenes/facebook.jpg" width="25px"/></a></div>
+							<div id="tw"><a href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twitter.jpg" width="28px"/></a></div>
+							<div id="gp"><a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img src="imagenes/gplus.jpg" width="25px"/></a></div>
+							<div id="yt"><a href="https://www.youtube.com/?hl=es&gl=ES" target="_blank"><img src="imagenes/youtube.jpg" width="28px"/></a></div>
+						
+						</div>
+					</div>
+					<!-- Logo -->
+					<div id="cabizq">
+						<a href="index.html"><img src="imagenes/logo.jpg" id="imagenlogo" height="150px"></a>
+					</div>
+					<!-- Nombre -->
+					<div id="cabder">
+						WildFriends
+					</div>
+					
+											
+				</div>
+			<!-- 	Contenido -->
+				<div id="contenido">
+					<div class="seccion">En el mundo</div>
+				
+
+					<div class="info">
+						Hasta el día de hoy <strong>"WildFriends"</strong> ha trabajado en numerosos proyectos en España y alrededor del mundo, realizando estudios de Impacto Ambiental para nuevos proyectos de conservación o cualquier aspecto que precise evaluar las repercusiones medioambientales antes de ser ejecutado.
+					</div>
+					
+					
+										
+					<div class="info">
+					<h1>Proyectos en España</h1>
+						<p>España es unos de los países con más diversidad biológica de la Unión Europea y tiene una gran diversidad ecosistémica; desde el verdor de Asturias a las zonas desérticas de Almería, todos ellos ecosistemas naturales. </p>
+						<p>La fragmentación de estos ecosistemas es una grave amenaza que condiciona la conservación de procesos ecológicos completos. Por ello, España está incluida en la <a href="http://www.magrama.gob.es/es/biodiversidad/temas/espacios-protegidos/red-natura-2000/" target="_blank">Red Natura 2000</a>, que es una red ecológica de áreas de conservación de la biodiversidad en la Unión Europea.</p> 
+						<p>Desde WildFriends hemos desarrollado numerosos proyectos para ayudar a la conservación de estos ecosistemas únicos.</p>
+						
+						<br/>
+						
+						<img id="immp" name="immp" src="imagenes/espana.png" alt="Elegir comunidad" style="border: 1px solid black" usemap="#mapa"/>
+						<map name="mapa" id="mapa">
+						
+							<area shape="poly" coords="153, 4, 105, 36, 11, 78, 174, 80, 175, 13" alt="Mapa de España" onclick="javascript:galicia();" onmouseover="javascript:document.getElementById('immp').src='imagenes/galicia.png'" onmouseout="javascript:document.getElementById('immp').src='imagenes/espana.png'" />
+							<div id="gal"><a href="proyectos_acuaticos.html" target="_blank">Estudio de la fauna y flora intermareal del litoral gallego.</a></div>
+							
+							<area shape="poly" coords="181, 40, 173, 80, 198, 97, 175, 120, 175, 153, 196, 145, 227, 157, 290, 110, 330, 117, 336, 83, 304, 79, 298, 28, 272, 37, 272, 37, 272, 47, 243, 27" onclick="javascript:castyleon();" onmouseover="javascript:document.getElementById('immp').src='imagenes/cyl.png'" onmouseout="javascript:document.getElementById('immp').src='imagenes/espana.png'" />
+							<div id="sanabria"><a href="proyectos_acuaticos.html" target="_blank">Caracterización ecológica del lago de Sanabria y de algunos sistemas acuáticos cercanos (río Tera, río de la Forcadura, laguna de los Peces, laguna de las Yeguas) y análisis limnológico de las lagunas de Villafáfila y del lago de Carucedo.</a></div>
+							
+							 
+							<area shape="poly" coords="287, 113, 251, 154, 280, 160, 273, 170, 300, 160, 286, 115"onclick="javascript:madrid();" alt="Mapa de España" onmouseover="javascript:document.getElementById('immp').src='imagenes/madrid.png';" onmouseout="javascript:document.getElementById('immp').src='imagenes/espana.png'" />
+							<div id="jarama"><a href="proyectos_terrestres.html" target="_blank">Hetereogeneidad en la estructura de vegetación en sistemas agrarios y su relación con la disponibilidad de alimento para aves esteparias.</a><br/> <br/>
+							<a href="proyectos_acuaticos.html" target="_blank">Estudio de ecosistemas acuáticos en la región de Madrid.</a>
+							</div><br/>
+							
+						 
+						</map>
+						<p style="margin-left: 100px; font-size: 18px;">Pincha en las Comunidades Autónomas señaladas para conocer sus proyectos</p>
+							
+
+							
+					</div>
+					
+					<div class="info">
+					<h1>Proyectos en el resto del mundo</h1>
+						<p>La biodiversidad es el término por el que se hace referencia a la amplia variedad de seres vivos sobre la Tierra y los patrones naturales que la conforman.</p>
+						<p>El valor esencial y fundamental de la biodiversidad reside en que es resultado de un proceso histórico natural de gran antigüedad. Por esta sola razón, la diversidad biológica tiene el inalienable derecho de continuar su existencia.</p> 
+						<p>Sin lugar a dudas, la biodiversidad en el mundo es una de las cosas más importantes para que el planeta Tierra siga funcionando correctamente.</p>
+						
+						
+						<img id="immp2" name="immp2" src="imagenes/mundo.png" alt="Elegir comunidad" style="border: 1px solid black" usemap="#mapa2"/>
+						
+						
+						<map name="mapa2" id="mapa2">
+						
+							<area shape="poly" coords="64,82,47,104,54,124,96,142,127,132,135,145,136,122,185,91,147,100,141,84" alt="Mapamundi" onclick="javascript:usa();" onmouseover="javascript:document.getElementById('immp2').src='imagenes/usa.png'" onmouseout="javascript:document.getElementById('immp2').src='imagenes/mundo.png'" />
+							<div id="usa"><a href="proyectos_terrestres.html" target="_blank">Modelos de nicho ecológico para la reintroducción del Cóndor de California.</a></div>
+							
+							<area shape="poly" coords="178,201,156,207,146,236,164,242,200,283,194,292,207,300,212,281,230,272,241,228,201,214,202,201,181,207" alt="Mapamundi" onclick="javascript:brasil();" onmouseover="javascript:document.getElementById('immp2').src='imagenes/brasil.png'" onmouseout="javascript:document.getElementById('immp2').src='imagenes/mundo.png'" />
+							<div id="brasil"><a href="proyectos_terrestres.html" target="_blank">Características del paisaje y las consecuencias sobre el Jaguar y su depredación sobre el ganado.</a></div>
+							
+							<area shape="poly" coords="352,69,345,75,345,83,348,87,360,85,357,79,362,76,361,70" alt="Mapamundi" onclick="javascript:alemania();" onmouseover="javascript:document.getElementById('immp2').src='imagenes/alemania.png'" onmouseout="javascript:document.getElementById('immp2').src='imagenes/mundo.png'" />
+							<div id="alemania"><a href="proyectos_acuaticos.html" target="_blank">Nuevo registro del género <i>Stenodactylina</i> del Jurásico Medio en el suroeste de Alemania.</a></div>
+							
+							<area shape="poly" coords="367,288,373,303,387,305,407,288,403,273,396,273,379,285,376,279,373,290" alt="Mapamundi" onclick="javascript:safrica();" onmouseover="javascript:document.getElementById('immp2').src='imagenes/safrica.png'" onmouseout="javascript:document.getElementById('immp2').src='imagenes/mundo.png'" />
+							<div id="safrica"><a href="proyectos_terrestres.html" target="_blank">Diferencias de desarrollo de quimioreceptores en machos y hembras de Elefante Africano.</a></div>
+							
+							<area shape="poly" coords="517,82,507,95,509,102,496,108,511,120,513,129,547,139,554,136,564,143,562,148,571,156,581,151,593,157,610,152,615,134,605,119,610,114,598,110,604,104,606,109,622,99,619,95,624,90,621,84,616,87" alt="Mapamundi" onclick="javascript:china();" onmouseover="javascript:document.getElementById('immp2').src='imagenes/china.png'" onmouseout="javascript:document.getElementById('immp2').src='imagenes/mundo.png'" />
+							<div id="china"><a href="proyectos_terrestres.html" target="_blank">Buscando el origen del pulgar del Panda.</a></div>
+										
+						 
+						</map>
+						<p style="margin-left: 200px; font-size: 18px;">Pincha en cada país señalado para conocer sus proyectos</p>
+							
+					</div>
+				
+			
+				</div>
+				<!-- Pie -->
+				<div class="pie">
+					<div id="menupie">
+						<div class="conoc">
+							<ul><h3>Conócenos</h3><br/>
+								<li><a href="index.html">Quiénes somos</a></li><br/>
+								<li><a href="quienessomos_historia.html">Historia</a></li><br/>
+								<li><a href="quienessomos_mundo.html">WF en el mundo</a></li><br/>
+							</ul>
+						</div>
+						<div class="proy">
+							<ul><h3>Proyectos</h3><br/>
+								<li><a href="proyectos_acuaticos.html">Sist. acuáticos</a></li><br/>
+								<li><a href="proyectos_terrestres.html">Sist. terrestres</a></li><br/>
+								<li><a href="proyectos_galeria.html">Galería</a></li><br/>
+								<li><a href="proyectos_ninos.html">Para niños</a></li><br/>
+							</ul>
+						</div>
+						<div class="infor">
+							<ul><h3>Infórmate</h3><br/>
+								<li><a href="informate_eventos.html">Eventos</a></li><br/>
+								<li><a href="informate_noticias.html">Noticias</a></li><br/>
+								<li><a href="informate_trabaja.html">Trabajo</a></li><br/>
+								<li><a href="informate_listaroja.html">Lista Roja IUCN</a></li><br/>
+								<li><a href="informate_faq.html">FAQ</a></li><br/>
+							</ul>
+							
+						</div>
+						<div class="colab">
+							<ul><h3>Colabora</h3><br/>
+								<li><a href="colabora_donaciones.html">Donaciones</a></li><br/>
+								<li><a href="colabora_voluntariado.html">Voluntariado</a></li><br/>
+								<li><a href="colabora_tienda.html">Tienda</a></li><br/>
+							</ul>
+						</div>
+						<div class="contac">
+							<ul><h3>Contacto</h3><br/>
+								<li><a href="contacto_cuentanos.php">Cuéntanos</a></li><br/>
+							</ul>
+						</div>
+					</div>
+					<div id="btnspie">
+						<span id="aviso">Aviso legal</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+						<span id="privacidad">Política de privacidad</span>
+						
+						<div id="textoaviso">
+							<p>DATOS IDENTIFICATIVOS: En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, a continuación se reflejan los siguientes datos: La empresa titular de WildFriends (en adelante, el Site) es WildFriends S.L, con domicilio en C/Miguel Yuste, 40 - 28037 Madrid, con número de C.I.F: B-85635910, inscrita en el Registro Mercantil de Madrid en el tomo 26.455, folio 157, sección 8, hoja M-476760, inscripción 1.</p>
+							<p>USUARIOS: El acceso y/o uso de los portales de WildFriends atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de aplicación independientemente de las Condiciones Generales de Contratación que en su caso resulten de obligado cumplimiento.</p>
+
+							<p>USO DEL PORTAL: el Site de WildFriends proporciona el acceso a multitud de informaciones, servicios, programas o datos (en adelante, "los contenidos") en Internet pertenecientes a WildFriends o a sus licenciantes, a los que el USUARIO puede tener acceso. El USUARIO asume la responsabilidad del uso del Site. Dicha responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios o contenidos. En dicho registro el USUARIO será responsable de aportar información veraz y lícita. Como consecuencia de este registro, al USUARIO se le puede proporcionar una contraseña de la que será responsable, comprometiéndose a hacer un uso diligente y confidencial de la misma. El USUARIO se compromete a hacer un uso adecuado de los contenidos y servicios (como por ejemplo servicios de chat, foros de discusión o grupos de noticias) que WildFriends ofrece a través de su Site y con carácter enunciativo pero no limitativo, a no emplearlos para (i) incurrir en actividades ilícitas, ilegales o contrarias a la buena fe y al orden público; (ii) difundir contenidos o propaganda de carácter racista, xenófobo, pornográfico-ilegal, de apología del terrorismo o atentatorio contra los derechos humanos; (iii) provocar daños en los sistemas físicos y lógicos de WildFriends, de sus proveedores o de terceras personas, introducir o difundir en la red virus informáticos o cualesquiera otros sistemas físicos o lógicos que sean susceptibles de provocar los daños anteriormente mencionados; (iv) intentar acceder y, en su caso, utilizar las cuentas de correo electrónico de otros usuarios y modificar o manipular sus mensajes. WildFriends se reserva el derecho de retirar todos aquellos comentarios y aportaciones que vulneren el respeto a la dignidad de la persona, que sean discriminatorios, xenófobos, racistas, pornográficos, que atenten contra la juventud o la infancia, el orden o la seguridad pública o que, a su juicio, no resultaran adecuados para su publicación. En cualquier caso, WildFriends no será responsable de las opiniones vertidas por los usuarios a través de los foros, chats, u otras herramientas de participación.</p>
+
+							<p>PROTECCIÓN DE DATOS: WildFriends cumple con las directrices de la Ley Orgánica 15/1999 de 13 de diciembre de Protección de Datos de Carácter Personal, el Real Decreto 1720/2007 de 21 de diciembre por el que se aprueba el Reglamento de desarrollo de la Ley Orgánica y demás normativa vigente en cada momento, y vela por garantizar un correcto uso y tratamiento de los datos personales del usuario. Para ello, junto a cada formulario de recabo de datos de carácter personal, en los servicios que el USUARIO pueda solicitar a WildFriends, hará saber al USUARIO de la existencia y aceptación de las condiciones particulares del tratamiento de sus datos en cada caso, informándole de la responsabilidad del fichero creado, la dirección del responsable, la posibilidad de ejercer sus derechos de acceso, rectificación, cancelación u oposición, la finalidad del tratamiento y las comunicaciones de datos a terceros en su caso. Asimismo, WildFriends informa que da cumplimiento a la Ley 34/2002 de 11 de julio, de Servicios de la Sociedad de la Información y el Comercio Electrónico y le solicitará su consentimiento al tratamiento de su correo electrónico con fines comerciales en cada momento. </p>
+						</div>
+						
+						<div id="textoprivacidad">
+							<p>Este sitio Web es propiedad de WildFriends, una organización española dedicada a conservación de la naturaleza.</p>
+							<p>La política de privacidad, y con ella este texto, es actualizada periódicamente para su adaptación a la normativa vigente y para la mejora de nuestros sistemas, por lo que recomendamos consultarla periódicamente.</p>
+							<p>El uso continuado de este sitio siguiendo la publicación de los cambios en la política de privacidad implica su aceptación.</p>
+							<p>• WildFriends solo recoge la información personal necesaria para el servicio que presta, solicitada de forma específica y facilitada por el usuario de forma voluntaria.<br/>
+							• WildFriends está comprometida con el cumplimiento de la normativa sobre privacidad y seguridad de datos personales.<br/>
+							• No venderemos o entregaremos tu información a otra organización externa a WildFriends, a menos que nos des autorización expresa y específica para hacerlo.<br/>
+							• Siempre te daremos la opción de terminar tu suscripción con nuestras listas de correo.<br/>
+							• Si tienes menos de 18 años de edad, deberás consultar con tus padres o tutores antes de registrarte en este sitio.</p>
+							<p>Privacidad de información<br/>
+								a) Información personal - como nombre, dirección, número telefónico, dirección de correo electrónico y fecha de nacimiento (donde sea apropiado). Recogemos esta información sólo en relación a actividades específicas. No es necesario que reveles este tipo de información si no lo deseas.<br/>
+
+								b) Información no personal. WildFriends recoge datos tales como direcciones IP (la ubicación del computador en Internet), páginas visitadas y archivos descargados. Esto nos ayuda a determinar cuántas personas usan nuestro sitio, cuántas personas nos visitan de forma regular, qué páginas son más populares y qué páginas lo son menos. Esta información no nos dice nada acerca de tu identidad, sólo nos permite administrar mejorar nuestro servicio.</p>
+							<p>La información personal enviada a través de los formularios en este sitio es almacenada sólo en una base de datos de WildFriends. Aseguramos que WildFriends no compartirá la información que nos entregues en este sitio con organización alguna externa a WildFriends, a menos que nos hayas permitido específicamente hacerlo.</p>
+							<p>Si eres menor de 14 años, necesitas obtener permiso de tus padres o tutores antes de enviar información personal (tu nombre, dirección, correo electrónico, etc.) a nosotros o cualquier otra persona a través de Internet. Animamos a los padres a involucrarse en el uso de Internet de sus hijos y a estar informados acerca de las actividades en las que están participando.</p>
+							<p>Tienes derecho, en cualquier momento, a acceder, pedir una copia de tu información, cancelar o rectificar sus datos, así como a oponerte a su tratamiento, rellenando el <a href="contacto_cuentanos.php">formulario<a> presente en nuestra página</p>
+							<p>Puede haber enlaces en este sitio Web que dirijan a otros sitios Web fuera de nuestro servicio. Cualquier enlace a sitios externos está previsto nada más que para tu referencia y conveniencia. La gestión y contenido de esos sitios está más allá de nuestro control, y no nos hacemos responsables de su contenido u otro material o cualquier producto o servicio publicitado o vendido a través de alguno de esos sitios Web. No seremos responsables bajo circunstancia alguna por daños, directos o indirectos, causados por cualquier uso de ese sitio Web externo vinculado a este sitio Web, seamos o no informados respecto a la posibilidad de esos daños.</p>
+
+							<p>Si tienes alguna pregunta respecto a nuestra política de privacidad, por favor <a href="contacto_cuentanos.php">contáctanos<a>.</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		
+	</body>
+
+</html>

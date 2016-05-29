@@ -1,0 +1,174 @@
+﻿
+/* Información */
+			#info
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						padding: 20px;
+						text-align: justify;
+								
+			}
+			#titespecies
+			{
+						color: DarkOliveGreen;
+						text-align: center;
+			}
+		
+			
+			
+			
+/* Especies */
+			#especies
+			{
+						text-align: center;
+						color: DarkOliveGreen;
+						font-size: 25px;
+						height: 920px;
+			}
+			#imgg
+			{
+						padding-left: 20px;
+						padding-right: 20px;
+						
+									
+			}
+			#img1
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						width: 250px;
+						
+						
+			}
+			#img2
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						width: 250px;
+										
+						
+			}
+			#img3
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						width: 250px;
+						
+						
+			}
+			#img4
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						width: 250px;
+						
+						
+			}
+			
+/* Elegir especie*/
+			#elegir
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						padding-left: 40px;
+						float: left;
+						width: 925px;
+						
+						
+			}
+			#elige
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						padding-right: 120px;
+						padding-left: 10px;
+						
+						
+			}
+						
+			
+/* Datos personales */
+			#datospersonales
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						padding-left: 40px;
+						float: left;
+						width: 925px;
+						
+						
+			}
+			#datosp
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						padding-right: 120px;
+						padding-left: 10px;
+						
+			}
+			#frase1
+			{
+						color: DarkOliveGreen;
+						font-size: 30px;
+						width: 700px;
+						text-align: center;
+						padding: 90px;
+			}
+			
+/* Datos bancarios */
+			#datosbancarios
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						padding-left: 40px;
+						float: left;
+						width: 925px;
+						
+						
+						
+			}
+			#datobn
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						padding-right: 120px;
+						padding-left: 10px;
+						
+			}
+			#modopago
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						padding-right: 120px;
+						padding-left: 10px;
+						
+			}
+			
+/* Privacidad */
+			#privac
+			{
+						
+						
+						padding-left: 40px;
+						float: left;
+						width:800px;
+			}
+			
+/* Botones */
+			#enviar
+			{
+						
+						
+						padding-left: 40px;
+						padding-bottom: 50px;			
+						
+			}
+			

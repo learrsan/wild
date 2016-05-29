@@ -1,0 +1,585 @@
+			
+			#info
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						padding: 20px;
+						padding-top: 50px;
+						text-align: justify;
+						float: left;
+						width: 960px;
+						height: auto;
+						background-color: DarkKhaki;
+									
+			}
+			#info2
+			{
+						color: DarkOliveGreen;
+						font-size: 18px;
+						padding: 20px;
+						padding-top: 10px;
+						text-align: justify;
+						float: left;
+						width: 800px;
+						height: auto;
+						background-color: DarkKhaki;
+									
+			}
+						
+			h1
+			{
+						text-align: center;
+			}
+/* JUEGO 1	 */					
+			#juego1
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						width: 960px;
+						background-color: darkkhaki;
+						padding-left: 20px;
+						padding-right: 20px;
+						
+						
+			}
+			#piezas
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						height: 500px;
+						margin-left: 55px;
+						background-color: DarkKhaki;
+					
+			}
+			#puzzle
+			{
+						display: none;
+			}
+			#abrepuzzle
+			{
+						float: right;
+						width: 100px;
+						
+			}
+			#cierrapuzzle
+			{
+						float: right;
+						display: none;
+						cursor: hand;
+						cursor: pointer;
+			}
+			
+				
+
+			#pan1a
+			{
+						float: left;
+			}
+			#pan1b
+			{
+						float: left;
+			}
+			#pan2a
+			{
+						float: left;
+			}
+			#pan2b
+			{
+						float: left;
+			}
+			#pan3a
+			{
+						float: left;
+			}
+			#pan3b
+			{
+						float: left;
+			}
+			#pan4a
+			{
+						float: left;
+			}
+			#pan4b
+			{
+						float: left;
+			}
+
+/* JUEGO2*/
+			#juego2
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						width: 960px;
+						background-color: darkkhaki;
+						padding-left: 20px;
+						padding-right: 20px;
+						
+			}
+			
+			#jueg2
+			{
+						display: none;
+						background-color: darkkhaki;
+						width: 900px;
+						height: 100px;
+						float: left;
+						margin-bottom: 20px;
+			}
+			#jueg3
+			{
+						display: none;
+						background-color: darkkhaki;
+						width: 900px;
+						height: 100px;
+						float: left;
+						margin-bottom: 20px;
+						margin-top: 50px;
+						
+						
+			}
+			#animal1
+			{
+						float: left;
+						
+			}
+			#img1b
+			{
+						display: none;
+			}
+			
+			
+			#animal2
+			{
+						float: left;
+			}
+			#animal3
+			{
+						float: left;
+			}
+			#animal4
+			{
+						float: left;
+			}
+			#animal5
+			{
+						float: left;
+					
+			}
+			#animal6
+			{
+						float: left;
+					
+			}
+			#animal7
+			{
+						float: left;
+					
+			}
+			#animal8
+			{
+						float: left;
+					
+			}
+			#animal9
+			{
+						float: left;
+					
+			}
+			#mamif
+			{
+						float: left;
+						background-color: #778959;
+						padding-top: 25px;
+						width: 100px;
+						height: 50px;
+						text-align: center;
+						margin-left: 100px;
+						color: beige;
+			}
+			#ave
+			{
+						float: left;
+						background-color: #778959;
+						padding-top: 25px;
+						width: 100px;
+						height: 50px;
+						text-align: center;
+						margin-left: 50px;
+						color: beige;
+			}
+			#reptil
+			{
+						float: left;
+						background-color: #778959;
+						padding-top: 25px;
+						width: 100px;
+						height: 50px;
+						text-align: center;
+						margin-left: 50px;
+						color: beige;
+			}
+			#anfib
+			{
+						float: left;
+						background-color: #778959;
+						padding-top: 25px;
+						width: 100px;
+						height: 50px;
+						text-align: center;
+						margin-left: 50px;
+						color: beige;
+			}
+			#pez
+			{
+						float: left;
+						background-color: #778959;
+						padding-top: 25px;
+						width: 100px;
+						height: 50px;
+						text-align: center;
+						margin-left: 50px;
+						color: beige;
+			}
+			#abrejuego2
+			{
+						float: right;
+						width: 100px;
+						
+			}
+			#cierrajuego2
+			{
+						float: right;
+						display: none;
+						cursor: hand;
+						cursor: pointer;
+			}
+			#restjuego2
+			{
+						display: none;
+						float: left;
+						cursor: hand;
+						cursor: pointer;
+								
+			}
+/* JUEGO 3 */
+			#juego3
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						width: 960px;
+						background-color: darkkhaki;
+						padding-left: 20px;
+						padding-right: 20px;
+						
+			}
+			
+			#jueg3a
+			{
+						display: none;
+						background-color: darkkhaki;
+						width: 900px;
+						height: 200px;
+						float: left;
+						margin-bottom: 20px;
+						
+			}
+					
+			#abrejuego3
+			{
+						float: right;
+						width: 100px;
+						
+			}
+			#cierrajuego3
+			{
+						float: right;
+						display: none;
+						cursor: hand;
+						cursor: pointer;
+			}
+			#j3
+			{
+						margin-left: 70px;
+						margin-bottom: 100px;
+			}
+			#cadena
+			{
+						float: left;
+						margin-bottom: 20px;
+										
+			}
+			#hoja
+			{
+						width: 100px;
+						height: 100px;
+						background-color: darkkhaki;
+						float: left;
+						border: 1px dashed black;
+			}
+			#oruga
+			{
+						width: 100px;
+						height: 100px;
+						background-color: darkkhaki;
+						float: left;
+						border: 1px dashed black;
+			}
+			#escarabajo
+			{
+						width: 100px;
+						height: 100px;
+						background-color: darkkhaki;
+						float: left;
+						border: 1px dashed black;
+			}
+			#musarana
+			{
+						width: 100px;
+						height: 100px;
+						background-color: darkkhaki;
+						float: left;
+						border: 1px dashed black;
+			}
+			#zorro 
+			{
+						width: 100px;
+						height: 100px;
+						background-color: darkkhaki;
+						float: left;
+						border: 1px dashed black;
+			}
+			.flecha
+			{
+						float: left;
+						margin-top: 30px;
+			}
+			#arrastrables
+			{
+						width: 800px;
+						padding-bottom: 50px;
+						text-align: center;
+						margin-top: 20px;
+			}
+			#hoja1
+			{
+						width: 150px;
+						height: 30px;
+						background-color: darkolivegreen;
+						color: darkkhaki;
+						text-shadow: 2px 5px 5px black;
+						float: left;
+						padding-top: 15px;
+						margin-left: 10px;
+			}
+			#oruga1
+			{
+						width: 150px;
+						height: 30px;
+						background-color: darkolivegreen;
+						color: darkkhaki;
+						text-shadow: 2px 5px 5px black;
+						float: left;
+						padding-top: 15px;
+						margin-left: 10px;
+			}
+			#escarabajo1
+			{
+						width: 150px;
+						height: 30px;
+						background-color: darkolivegreen;
+						color: darkkhaki;
+						text-shadow: 2px 5px 5px black;
+						float: left;
+						padding-top: 15px;
+						/* margin-left: 10px; */
+			}
+			#musarana1
+			{
+						width: 150px;
+						height: 30px;
+						background-color: darkolivegreen;
+						color: darkkhaki;
+						text-shadow: 2px 5px 5px black;
+						float: left;
+						padding-top: 15px;
+						margin-left: 10px;
+			}
+			#zorro1
+			{
+						width: 150px;
+						height: 30px;
+						background-color: darkolivegreen;
+						color: darkkhaki;
+						text-shadow: 2px 5px 5px black;
+						float: left;
+						padding-top: 15px;
+						margin-left: 10px;
+			}
+			/*
+			#jueg3b
+			{
+						display: none;
+						background-color: darkkhaki;
+						width: 900px;
+						height: 100px;
+						float: left;
+						margin-bottom: 20px;
+						margin-top: 50px;
+						
+						
+			}
+			#juego3 li
+			{
+						background-color: darkolivegreen;
+						margin-left: 2px;
+						height: 30px;
+						padding: 10px;
+						color: darkkhaki;
+						/* text-align: center; 
+						float: left;
+						text-shadow: 2px 5px 5px black;
+			}
+			#conttodo
+			{
+						margin-left: 60px;
+						margin-top: 20px;
+			}
+			#compjuego3
+			{
+						display: none;
+						float: left;
+						margin-top: 48px;
+						cursor: hand;
+						cursor: pointer;
+			}*/
+/* Juego 4 */
+			#juego4
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						width: 960px;
+						background-color: darkkhaki;
+						padding-left: 20px;
+						padding-right: 20px;
+						/* padding-bottom: 50px; */
+						
+			}
+			#jueg4a
+			{
+						display: none;
+						background-color: darkkhaki;
+						width: 900px;
+						height: 400px;
+						float: left;
+						margin-bottom: 20px;
+						margin-left: 20px;
+						
+						
+			}
+			#cierrajuego4
+			{
+						float: right;
+						display: none;
+						cursor: hand;
+						cursor: pointer;
+			}
+			#abrejuego4
+			{
+						float: right;
+						width: 100px;
+						
+			}
+			#lista4 li
+			{
+						width: 300px;
+						height: 30px;
+						text-align: center;
+						margin-left: 200px; 
+						background-color: transparent;
+						color: darkkhaki;
+						padding-top: 5px;
+						text-shadow: 2px 5px 5px black;
+			}
+			#list4
+			{
+						float: left;
+						margin: auto;
+						position: relative;
+						top: 150px;
+						right: 350px;
+						
+						
+			}
+			#triang
+			{
+						width: 0;
+						height: 0;
+						border-left: 370px  solid darkkhaki;
+						border-right: 370px solid darkkhaki;
+						border-bottom: 370px solid darkolivegreen;
+						position: absolute;
+			}
+			#compjuego4
+			{
+						display: none;
+						float: left;
+						cursor: hand;
+						cursor: pointer;
+			}
+
+/* Juego 5 */
+			#juego5
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						float: left;
+						width: 960px;
+						background-color: darkkhaki;
+						padding-left: 20px;
+						padding-right: 20px;
+						padding-bottom: 50px;
+						
+			}
+			#jueg5a
+			{
+						margin-top: -5000px;
+						background-color: darkkhaki;
+						width: 900px;
+						height: 400px;
+						float: left;
+						margin-bottom: 20px;
+						margin-left: 20px;
+						
+						
+			}
+			#cierrajuego5
+			{
+						float: right;
+						display: none;
+						cursor: hand;
+						cursor: pointer;
+			}
+			#abrejuego5
+			{
+						float: right;
+						width: 100px;
+						
+			}
+			
+			#compjuego5
+			{
+						display: none;
+						float: left;
+						cursor: hand;
+						cursor: pointer;
+			}
+			#hormis
+			{
+						float: left;
+			}
+			

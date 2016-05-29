@@ -1,0 +1,956 @@
+﻿<html>
+	<head>
+	
+		<title>WildFriends | Para niños</title>
+		<link rel="stylesheet" href="css/WFestilo.css" type="text/css"/>
+		<link rel="stylesheet" href="css/ninos.css" type="text/css"/>
+		
+		<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<link type="text/css" href="css/jquery-ui.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		
+		<script src="js/jquery.elevateZoom-2.5.5.min.js"></script>
+		
+<!--	 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+		<link rel="shortcut icon" href="favicon.ico">
+		
+		<script type="text/javascript">
+    var device = navigator.userAgent
+
+if (device.match(/Iphone/i)|| device.match(/Ipod/i)|| device.match(/Android/i)|| device.match(/J2ME/i)|| device.match(/BlackBerry/i)|| device.match(/iPhone|iPad|iPod/i)|| device.match(/Opera Mini/i)|| device.match(/IEMobile/i)|| device.match(/Mobile/i)|| device.match(/Windows Phone/i)|| device.match(/windows mobile/i)|| device.match(/windows ce/i)|| device.match(/webOS/i)|| device.match(/palm/i)|| device.match(/bada/i)|| device.match(/series60/i)|| device.match(/nokia/i)|| device.match(/symbian/i)|| device.match(/HTC/i))
+ { 
+window.location = "http://www.wildfriends.hol.es/mobile/";
+
+}
+</script>
+	
+	</head>
+	
+	<body>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65776600-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+		<script type="text/javascript">
+<!-- JQUERY -->	
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+			
+						
+			function inicializar ()	{
+				var x;
+				x=$("#cabizq");
+				x.fadeIn(2000);
+				
+				
+				
+
+<!-- Puzzle -->				
+				var x; 
+				x=$("#pan1a");
+				x.draggable({containment:"parent"});
+						
+				var x;
+				x=$("#pan1b");
+				x.draggable({containment:"parent"});
+						
+				var x; 
+				x=$("#pan2a");
+				x.draggable({containment:"parent"});
+						
+				var x;
+				x=$("#pan2b");
+				x.draggable({containment:"parent"});
+						
+				var x; 
+				x=$("#pan3a");
+				x.draggable({containment:"parent"});
+						
+				var x;
+				x=$("#pan3b");
+				x.draggable({containment:"parent"});
+						
+				var x; 
+				x=$("#pan4a");
+				x.draggable({containment:"parent"});
+						
+				var x;
+				x=$("#pan4b");
+				x.draggable({containment:"parent"});		
+<!-- Juego 2 -->					
+		<!-- Mamíferos -->
+				var x;
+				x=$("#animal1, #animal2, #animal3");
+				x.draggable({revert: true});
+				var x;
+				x=$("#mamif");
+				
+					
+				
+				x.droppable({drop:function (ev, ui){
+					x=ui.draggable.attr('id');
+					
+					
+						if (x=="animal1"){
+							var x;
+							x=$("#animal1");
+							x.effect("bounce", 1000);
+							x.css({"opacity":"0.2"});
+							alert("¡Correcto!");
+							$("#animal1").draggable("disable");
+										
+						}
+						
+						
+						if (x=="animal2"){
+							var x;
+							x=$("#animal2");
+							x.effect("bounce", 1000);
+							x.css({"opacity":"0.2"});
+							alert("¡Correcto!");
+							$("#animal2").draggable("disable");
+						}
+						
+						if (x=="animal3"){
+							var x;
+							x=$("#animal3");
+							x.css({"opacity":"0.2"});
+							x.effect("bounce", 1000);
+							alert("¡Correcto!");
+							$("#animal3").draggable("disable");
+						}
+				}});
+		<!-- Aves -->
+				var x;
+				x=$("#animal4, #animal5");
+				x.draggable({revert: true});
+				var x;
+				x=$("#ave");
+				
+				x.droppable({drop:function (ev, ui){
+					x=ui.draggable.attr('id');
+					
+					
+						if (x=="animal4"){
+							var x;
+							x=$("#animal4");
+							x.css({"opacity":"0.2"});
+							x.effect("bounce", 1000);
+							alert("¡Correcto!");
+							$("#animal4").draggable("disable");
+							
+							
+						}
+						
+						if (x=="animal5"){
+							var x;
+							x=$("#animal5");
+							x.css({"opacity":"0.2"});
+							x.effect("bounce", 1000);
+							alert("¡Correcto!");
+							$("#animal5").draggable("disable");
+						}
+						
+				}});
+		<!-- Reptiles -->
+				var x;
+				x=$("#animal6");
+				x.draggable({revert: true});
+				var x;
+				x=$("#reptil");
+				
+				x.droppable({drop:function (ev, ui){
+					x=ui.draggable.attr('id');
+					
+					
+						if (x=="animal6"){
+							var x;
+							x=$("#animal6");
+							x.css({"opacity":"0.2"});
+							x.effect("bounce", 1000);
+							alert("¡Correcto!");
+							$("#animal6").draggable("disable");
+							
+						}
+				
+				}});					
+
+		<!-- Anfibios -->
+				var x;
+				x=$("#animal8, #animal7");
+				x.draggable({revert: true});
+				var x;
+				x=$("#anfib");
+				
+				x.droppable({drop:function (ev, ui){
+					x=ui.draggable.attr('id');
+					
+					
+						if (x=="animal8"){
+							var x;
+							x=$("#animal8");
+							x.css({"opacity":"0.2"});
+							x.effect("bounce", 1000);
+							alert("¡Correcto!");
+							$("#animal8").draggable("disable");
+						
+						}
+						if (x=="animal7"){
+							var x;
+							x=$("#animal7");
+							x.css({"opacity":"0.2"});
+							x.effect("bounce", 1000);
+							alert("¡Correcto!");
+							$("#animal7").draggable("disable");
+						
+						}
+				
+				}});
+		<!-- Pez -->
+				var x;
+				x=$("#animal9");
+				x.draggable({revert: true});
+				var x;
+				x=$("#pez");
+				
+				x.droppable({drop:function (ev, ui){
+					x=ui.draggable.attr('id');
+					
+					
+						if (x=="animal9"){
+							var x;
+							x=$("#animal9");
+							x.css({"opacity":"0.2"});
+							x.effect("bounce", 1000);
+							alert("¡Correcto!");
+							$("#animal9").draggable("disable");
+						
+						}
+						
+				
+				}});	
+
+				var x;
+				x=$("#restjuego2");
+				x.click(restaurar);
+
+<!-- Juego 3 -->
+				var x;
+				x=$("#hoja1");
+				x.draggable({revert: true});
+							
+				var x;
+				x=$("#hoja");
+				x.droppable({drop:function (ev, ui){
+				x=ui.draggable.attr('id');
+					
+					
+					if (x=="hoja1"){
+						var x;
+						x=$("#hoja");
+						x.css({"backgroundImage":"url(imagenes/roble.jpg)", "border":"solid"});
+									
+						var x;
+						x=$("#hoja1");
+						x.effect("explode");
+						
+					
+					}
+				}});
+				
+				var x;
+				x=$("#oruga1");
+				x.draggable({revert: true});
+							
+				var x;
+				x=$("#oruga");
+				x.droppable({drop:function (ev, ui){
+				x=ui.draggable.attr('id');
+					
+					
+					if (x=="oruga1"){
+						var x;
+						x=$("#oruga");
+						x.css({"backgroundImage":"url(imagenes/oruga.jpg)", "border":"solid"});
+									
+						var x;
+						x=$("#oruga1");
+						x.effect("explode");
+					
+					}
+				}});
+				
+				var x;
+				x=$("#escarabajo1");
+				x.draggable({revert: true});
+							
+				var x;
+				x=$("#escarabajo");
+				x.droppable({drop:function (ev, ui){
+				x=ui.draggable.attr('id');
+					
+					
+					if (x=="escarabajo1"){
+						var x;
+						x=$("#escarabajo");
+						x.css({"backgroundImage":"url(imagenes/escarabajo.jpg)", "border":"solid"});
+									
+						var x;
+						x=$("#escarabajo1");
+						x.effect("explode");
+					
+					}
+				}});
+				
+				var x;
+				x=$("#musarana1");
+				x.draggable({revert: true});
+							
+				var x;
+				x=$("#musarana");
+				x.droppable({drop:function (ev, ui){
+				x=ui.draggable.attr('id');
+					
+					
+					if (x=="musarana1"){
+						var x;
+						x=$("#musarana");
+						x.css({"backgroundImage":"url(imagenes/musarana.jpg)", "border":"solid"});
+									
+						var x;
+						x=$("#musarana1");
+						x.effect("explode");
+					
+					}
+				}});
+				
+				var x;
+				x=$("#zorro1");
+				x.draggable({revert: true});
+							
+				var x;
+				x=$("#zorro");
+				x.droppable({drop:function (ev, ui){
+				x=ui.draggable.attr('id');
+					
+					
+					if (x=="zorro1"){
+						var x;
+						x=$("#zorro");
+						x.css({"backgroundImage":"url(imagenes/zorro.jpg)", "border":"solid"});
+									
+						var x;
+						x=$("#zorro1");
+						x.effect("explode");
+					
+					}
+				}});
+<!-- Juego 4 -->
+				var x;
+				x=$("#lista4");
+				x.sortable();
+				
+				var x;
+				x=$("#compjuego4");
+				x.click(compjuego4);
+
+<!-- Juego 5 -->				
+				var x;
+				x=$("#imagen1");
+				x.elevateZoom({zoomType:"lens", lensShape :"round", lensSize:100});
+				
+				var x;
+				x=$("#abrejuego5");
+				x.click(hormiga);
+				
+				
+				
+				
+				
+				var x;
+				x=$("#aviso");
+				x.click(mostrarAviso);
+				
+				var x;
+				x=$("#privacidad");
+				x.click(mostrarPriv);
+			}
+			
+<!-- Funciones fuera de inicio -->
+				function restaurar(){
+					var x;
+					x=$("#animal1");
+					$("#animal1").draggable("enable");
+					
+					var x;
+					x=$("#animal2");
+					$("#animal2").draggable("enable");
+					
+					var x;
+					x=$("#animal3");
+					$("#animal3").draggable("enable");
+					
+					var x;
+					x=$("#animal4");
+					$("#animal4").draggable("enable");
+					
+					var x;
+					x=$("#animal5");
+					$("#animal5").draggable("enable");
+					
+					var x;
+					x=$("#animal6");
+					$("#animal6").draggable("enable");
+					
+					var x;
+					x=$("#animal7");
+					$("#animal7").draggable("enable");
+					
+					var x;
+					x=$("#animal8");
+					$("#animal8").draggable("enable");
+					
+					var x;
+					x=$("#animal9");
+					$("#animal9").draggable("enable");
+					
+				
+				}	
+				
+				
+				function compjuego4(){
+					var texto;
+					texto=$("#lista4").html();
+								
+					var pter = texto.indexOf("terciarios");
+					var pprim = texto.indexOf("primarios");
+					var psecun = texto.indexOf("secundarios");
+					var pprod= texto.indexOf("productores");
+					var pdescom = texto.indexOf("descomponedores");
+								
+						/*if (pdescom < pter && pter < psecun && psecun < pprim && pprim < pprod){
+							alert("Correcto");
+						}
+						else{
+							alert("Incorrecto");
+						}*/
+						
+						if (pdescom > pter || pdescom > psecun || pdescom > pprim || pdescom > pprod){
+										alert("Descomponedores mal colocados");
+									}
+									else if (pter > psecun || pter > pprim || pter > pprod){
+										alert("Consumidores terciarios mal colocados");
+									}
+									else if (psecun > pprim || psecun > pprod){
+										alert("Consumidores secundarios mal colocados");
+									}
+									else if (pprim > pprod){
+										alert("Consumidores primarios mal colocados");
+									}
+																		
+									else {
+										alert("Correcto");
+									}
+						
+					
+				}
+				
+				function hormiga(){
+					
+					var x;
+					x=$("#horanimate");
+					x.animate({marginLeft:500}, 4000);
+				}
+			
+				
+			
+<!-- JAVASCRIPT -->
+<!-- Puzzle	 -->				
+					function abrirpuzzle(){
+						document.getElementById("puzzle").style.display="block";
+						document.getElementById("cierrapuzzle").style.display="block";
+						document.getElementById("abrepuzzle").style.display="none";
+					}
+					
+					function cerrarpuzzle(){
+						document.getElementById("puzzle").style.display="none";
+						document.getElementById("cierrapuzzle").style.display="none";
+						document.getElementById("abrepuzzle").style.display="block";
+					}
+<!-- Juego 2	 -->					
+					function abrirjuego2(){
+						document.getElementById("jueg2").style.display="block";
+						document.getElementById("jueg3").style.display="block";
+						document.getElementById("restjuego2").style.display="block";
+						document.getElementById("cierrajuego2").style.display="block";
+						document.getElementById("abrejuego2").style.display="none";
+					}
+					
+					function cerrarjuego2(){
+						document.getElementById("jueg2").style.display="none";
+						document.getElementById("jueg3").style.display="none";
+						document.getElementById("cierrajuego2").style.display="none";
+						document.getElementById("restjuego2").style.display="none";
+						document.getElementById("abrejuego2").style.display="block";
+						
+					}
+					
+					function restaurarjuego2(){
+						document.getElementById("animal1").style.opacity="1";
+						document.getElementById("animal2").style.opacity="1";
+						document.getElementById("animal3").style.opacity="1";
+						document.getElementById("animal4").style.opacity="1";
+						document.getElementById("animal5").style.opacity="1";
+						document.getElementById("animal6").style.opacity="1";
+						document.getElementById("animal7").style.opacity="1";
+						document.getElementById("animal8").style.opacity="1";
+						document.getElementById("animal9").style.opacity="1";
+					}
+<!-- Juego 3	 -->					
+					function abrirjuego3(){
+						document.getElementById("jueg3a").style.display="block";
+						document.getElementById("cierrajuego3").style.display="block";
+						document.getElementById("abrejuego3").style.display="none";
+					}
+					
+					function cerrarjuego3(){
+						document.getElementById("jueg3a").style.display="none";
+						document.getElementById("cierrajuego3").style.display="none";
+						document.getElementById("abrejuego3").style.display="block";
+					}
+<!-- Juego 4 -->
+					function abrirjuego4(){
+						document.getElementById("jueg4a").style.display="block";
+						document.getElementById("cierrajuego4").style.display="block";
+						document.getElementById("abrejuego4").style.display="none";
+						document.getElementById("compjuego4").style.display="block";
+					}
+					
+					function cerrarjuego4(){
+						document.getElementById("jueg4a").style.display="none";
+						document.getElementById("cierrajuego4").style.display="none";
+						document.getElementById("abrejuego4").style.display="block";
+						document.getElementById("compjuego4").style.display="none";
+					}
+					
+<!-- Juego 5 -->
+					function abrirjuego5(){
+					document.getElementById("jueg5a").style.marginTop="0";
+					document.getElementById("jueg5a").style.display="block";
+					document.getElementById("cierrajuego5").style.display="block";
+					document.getElementById("abrejuego5").style.display="none";
+					document.getElementById("compjuego5").style.display="block";
+					}
+					
+					function cerrarjuego5(){
+						document.getElementById("jueg5a").style.display="none";
+						document.getElementById("cierrajuego5").style.display="none";
+						document.getElementById("abrejuego5").style.display="block";
+						document.getElementById("compjuego5").style.display="none";
+					}
+
+					function compJ5(){
+						var numhormis = document.getElementById("hormis").value;
+						var lhormis = numhormis.length;
+						
+						if(numhormis==8){
+							alert("Correcto. Hay 8 hormigas");
+						}
+						else if(lhormis==0){
+							alert("Di un número de hormigas");
+						}
+						else if(numhormis<8){
+							alert("Incorrecto. Hay más de " + numhormis +" hormigas.");
+						}
+						else if(numhormis>8){
+							alert("Incorrecto. Hay menos de " + numhormis +" hormigas.");
+						}
+					}
+						
+<!-- Privacidad y aviso legal -->
+					function mostrarAviso(){
+					var x;
+					x=$("#textoaviso");
+					x.dialog({modal:true, "title":"Aviso legal", "width": "800px"});
+				}
+				
+				function mostrarPriv(){
+					var x;
+					x=$("#textoprivacidad");
+					x.dialog({modal:true, "title":"Política de privacidad", "width": "800px", "height": "auto"});
+				}
+			
+			
+		</script>	
+				
+				
+		</script>
+		
+			<div id="contenedor">
+				
+				<div id="cabecera">
+				
+					<div id="cabsup">
+				<!-- 	Menú -->
+						<div id="menu">
+						 <ul class="navegacion">
+													
+						
+							<li><a>Conócenos</a>
+							
+								<ul>
+									<li><a href="index.html">Quiénes somos</a></li><br/>
+									<li><a href="quienessomos_historia.html">Historia</a></li><br/>
+									<li><a href="quienessomos_mundo.html">WF en el mundo</a></li><br/>
+								
+								</ul>		
+													
+							
+							</li>				
+						
+							
+							<li><a>Proyectos</a>
+							
+								<ul>
+								
+									<li><a href="proyectos_acuaticos.html">Sist. acuáticos</a></li><br/>
+									<li><a href="proyectos_terrestres.html">Sist. terrestres</a></li><br/>
+									<li><a href="proyectos_galeria.html">Galería</a></li><br/>
+									<li><a href="proyectos_ninos.html">Para niños</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Infórmate</a>
+							
+								<ul>
+								
+									<li><a href="informate_eventos.html">Eventos</a></li><br/>
+									<li><a href="informate_noticias.html">Noticias</a></li><br/>
+									<li><a href="informate_trabaja.html">Trabajo</a></li><br/>
+									<li><a href="informate_listaroja.html">Lista Roja IUCN</a></li><br/>
+									<li><a href="informate_faq.html">FAQ</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Colabora</a>
+							
+								<ul>
+									<li><a href="colabora_donaciones.html">Donaciones</a></li><br/>
+									<li><a href="colabora_voluntariado.html">Voluntariado</a></li><br/>
+									<li><a href="colabora_tienda.html">Tienda</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Contacto</a>
+									
+									<ul>
+									<li><a href="contacto_cuentanos.php">Cuéntanos</a></li>
+									</ul>
+												
+								</li>
+						
+						</ul>
+						<!-- Redes sociales -->
+							<div id="fb"><a href="https://es-es.facebook.com/" target="_blank"><img src="imagenes/facebook.jpg" width="25px"/></a></div>
+							<div id="tw"><a href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twitter.jpg" width="28px"/></a></div>
+							<div id="gp"><a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img src="imagenes/gplus.jpg" width="25px"/></a></div>
+							<div id="yt"><a href="https://www.youtube.com/?hl=es&gl=ES" target="_blank"><img src="imagenes/youtube.jpg" width="28px"/></a></div>
+						
+						</div>
+					</div>
+					<!-- Logo -->
+					<div id="cabizq">
+						<a href="index.html"><img src="imagenes/logo.jpg" id="imagenlogo" height="150px"></a>
+					</div>
+					<!-- Nombre -->
+					<div id="cabder">
+						WildFriends
+					</div>
+					
+											
+				</div>
+			<!-- 	Contenido -->
+				<div id="contenido">
+					<div class="seccion">Para niños</div>
+				
+
+					<div id="info">
+						En <strong>WildFriends</strong> creemos que la educación de los niños es un pilar importante para que en el futuro el mundo sea un lugar lleno de ciudadanos concienciados con el medio ambiente.<br/>
+						Por ello incluimos proyectos para que los más pequeños empiecen a familiarizarse con este tema. Y que mejor manera de aprender que... <h1>¡Jugando!</h1>
+						
+					</div>
+					
+					<div id="juego1">
+						<fieldset>
+							<legend><h2>Puzzle</h2></legend>
+								
+								<div id="info2">
+									¿Sabes qué animal es? Averígualo resolviendo el puzzle. 
+								</div>
+								<div class="abrepuzzle"><img src="imagenes/btnabrirjuego.jpg" id="abrepuzzle" style="border-radius:100px;" width="100px" onClick="abrirpuzzle()"></div>
+								<div id="puzzle">
+									<div id="piezas">
+										<div id="pan2b"><img src="puzzle/pan2b.jpg"></div>
+										<div id="pan1a"><img src="puzzle/pan1a.jpg"></div>
+										<div id="pan4a"><img src="puzzle/pan4a.jpg"></div>
+										<div id="pan1b"><img src="puzzle/pan1b.jpg"></div>
+										<div id="pan3a"><img src="puzzle/pan3a.jpg"></div>
+										<div id="pan4b"><img src="puzzle/pan4b.jpg"></div>
+										<div id="pan3b"><img src="puzzle/pan3b.jpg"></div>
+										<div id="pan2a"><img src="puzzle/pan2a.jpg"></div>
+									</div> 
+									
+									<div id="puz">
+									</div> 
+								</div>
+								<div class="cierrapuzzle"><img src="imagenes/btncerrarjuego.jpg" id="cierrapuzzle" style="border-radius:100px;" width="100px" onClick="cerrarpuzzle()"></div>
+							</fieldset>
+					</div>
+					
+					<div id="juego2">
+						<fieldset>
+							<legend><h2>¿Qué somos?</h2></legend>
+								
+								<div id="info2">
+									Arrastra cada animal a su clasificación adecuada.
+								</div>
+								<div class="abrejuego2"><img src="imagenes/btnabrirjuego.jpg" id="abrejuego2" style="border-radius:100px;" width="100px" onClick="abrirjuego2()"></div>
+								<div id="jueg2">
+									<div id="animal1"><img src="imagenes/foto1.jpg" width="100px" height="100px"></div>
+									
+									<div id="animal5"><img src="imagenes/avu1.jpg" width="100px" height="100px"></div>
+									
+									<div id="animal2"><img src="imagenes/foto2.jpg" width="100px" height="100px"></div>
+									
+									<div id="animal6"><img src="imagenes/coc1.jpg" width="100px" height="100px"></div>
+									
+									<div id="animal9"><img src="imagenes/man1.jpg" width="100px" height="100px"></div>
+									
+									<div id="animal3"><img src="imagenes/foto3.jpg" width="100px" height="100px"></div>
+									
+									<div id="animal7"><img src="imagenes/esc1.jpg" width="100px" height="100px"></div>
+									
+									<div id="animal4"><img src="imagenes/foto4.jpg" width="100px" height="100px"></div>
+									
+									<div id="animal8"><img src="imagenes/ran1.jpg" width="100px" height="100px"></div>
+									
+								</div>
+								<div id="jueg3">
+									<div id="mamif">Mamífero</div>
+									<div id="ave">Ave</div>
+									<div id="reptil">Reptil</div>
+									<div id="anfib">Anfíbio</div>
+									<div id="pez">Pez</div>
+								</div>
+								
+								<div class="restaurajuego"><img src="imagenes/btnrestaurarjuego.jpg" id="restjuego2" style="border-radius:100px;" width="100px" onClick="restaurarjuego2()"></div>
+								<div class="cierrapuzzle"><img src="imagenes/btncerrarjuego.jpg" id="cierrajuego2" style="border-radius:100px;" width="100px" onClick="cerrarjuego2()"></div>
+							</fieldset>
+					</div>
+					
+					<div id="juego3">
+						<fieldset>
+							<legend><h2><a name="juego3">La cadena trófica</a></h2></legend>
+								
+								<div id="info2">
+									Ordena los siguientes seres vivos creando una cadena trófica. <br/><br/>Pista: las flechas indican el flujo de la materia y energía y NO quién se come a quién.
+								</div>
+								<div class="abrejuego3"><a href="#juego3"><img src="imagenes/btnabrirjuego.jpg" id="abrejuego3" style="border-radius:100px;" width="100px" onClick="abrirjuego3()"></a></div>
+								<div id="jueg3a">
+									
+									<div id="j3">
+										
+										<div id="cadena">
+											<div id="hoja"></div>
+											<div class="flecha"><img src="imagenes/flecha.jpg"></div>
+											<div id="oruga"></div>
+											<div class="flecha"><img src="imagenes/flecha.jpg"></div>
+											<div id="escarabajo"></div>
+											<div class="flecha"><img src="imagenes/flecha.jpg"></div>
+											<div id="musarana"></div>
+											<div class="flecha"><img src="imagenes/flecha.jpg"></div>
+											<div id="zorro"></div>
+										</div>
+										
+										<div id="arrastrables">
+											<div id="escarabajo1">Escarabajo</div>
+											<div id="zorro1">Zorro</div>
+											<div id="oruga1">Oruga</div>
+											<div id="hoja1">Hoja de roble</div>
+											<div id="musarana1">Musaraña</div>
+										</div>
+										
+									</div>
+									
+								</div>
+								
+								
+								
+								<div class="cierrapuzzle"><img src="imagenes/btncerrarjuego.jpg" id="cierrajuego3" style="border-radius:100px;" width="100px" onClick="cerrarjuego3()"></div>
+							</fieldset>
+					</div>
+					
+					<div id="juego4">
+						<fieldset>
+							<legend><h2><a name="juego4">Pirámide ecológica</a></h2></legend>
+								
+								<div id="info2">
+									Coloca los siguientes elementos para formar una pirámide trófica.
+								</div>
+								<div class="abrejuego4"><a href="#juego4"><img src="imagenes/btnabrirjuego.jpg" id="abrejuego4" style="border-radius:100px;" width="100px" onClick="abrirjuego4()"></a></div>
+								
+								<div id="jueg4a">
+									
+									<div id="triang">
+										 
+										 <div id="list4">
+											<ul id="lista4">
+												<li id="terciarios">Consumidores terciarios</li>
+												
+												<li id="productores">Productores</li>
+												
+												<li id="primarios">Consumidores primarios</li> 
+											
+												<li id="secundarios">Consumidores secundarios </li> 
+												
+												<li id="descomponedores">Descomponedores </li>
+											</ul> 
+										</div>
+										
+									</div>
+									
+								</div>
+								<div><img src="imagenes/btncomprobarjuego.jpg" id="compjuego4" style="border-radius:100px;" width="100px"></div>
+								
+								<div class="cierrapuzzle"><img src="imagenes/btncerrarjuego.jpg" id="cierrajuego4" style="border-radius:100px;" width="100px" onClick="cerrarjuego4()"></div>
+						</fieldset>
+					</div> 
+					
+					<div id="juego5">
+						<fieldset>
+							<legend><h2><a name="juego5">Encuentra las hormigas</a></h2></legend>
+								
+								<div id="info2">
+									Busca con la lupa en la arena las hormigas perdidas y cuéntalas.
+								</div>
+								<div class="abrejuego5"><a href="#juego5"><img src="imagenes/btnabrirjuego.jpg" id="abrejuego5" style="border-radius:100px;" width="100px" onClick="abrirjuego5()"></a></div>
+								
+								<div id="jueg5a">
+									
+									<img src="imagenes/arena.jpg" id="imagen1"  data-zoom-image="imagenes/arenahormi.jpg"/>
+									<p>¿Cuántas hormigas has encontrado dentro de la arena?</p>
+									<input type="text" id="hormis"></input>
+									<img src="imagenes/btncomprobarjuego.jpg" id="compjuego5" style="border-radius:100px;" width="100px" onClick="compJ5()">
+									<img src="imagenes/hormianimate.png" id="horanimate" />
+								</div>
+								
+								
+								
+								<div class="cierrapuzzle"><img src="imagenes/btncerrarjuego.jpg" id="cierrajuego5" style="border-radius:100px;" width="100px" onClick="cerrarjuego5()"></div>
+						</fieldset>
+					</div>
+					
+					
+					
+					
+				
+			
+				</div>
+				<!-- Pie -->
+				<div class="pie">
+					<div id="menupie">
+						<div class="conoc">
+							<ul><h3>Conócenos</h3><br/>
+								<li><a href="index.html">Quiénes somos</a></li><br/>
+								<li><a href="quienessomos_historia.html">Historia</a></li><br/>
+								<li><a href="quienessomos_mundo.html">WF en el mundo</a></li><br/>
+							</ul>
+						</div>
+						<div class="proy">
+							<ul><h3>Proyectos</h3><br/>
+								<li><a href="proyectos_acuaticos.html">Sist. acuáticos</a></li><br/>
+								<li><a href="proyectos_terrestres.html">Sist. terrestres</a></li><br/>
+								<li><a href="proyectos_galeria.html">Galería</a></li><br/>
+								<li><a href="proyectos_ninos.html">Para niños</a></li><br/>
+							</ul>
+						</div>
+						<div class="infor">
+							<ul><h3>Infórmate</h3><br/>
+								<li><a href="informate_eventos.html">Eventos</a></li><br/>
+								<li><a href="informate_noticias.html">Noticias</a></li><br/>
+								<li><a href="informate_trabaja.html">Trabajo</a></li><br/>
+								<li><a href="informate_listaroja.html">Lista Roja IUCN</a></li><br/>
+								<li><a href="informate_faq.html">FAQ</a></li><br/>
+							</ul>
+							
+						</div>
+						<div class="colab">
+							<ul><h3>Colabora</h3><br/>
+								<li><a href="colabora_donaciones.html">Donaciones</a></li><br/>
+								<li><a href="colabora_voluntariado.html">Voluntariado</a></li><br/>
+								<li><a href="colabora_tienda.html">Tienda</a></li><br/>
+							</ul>
+						</div>
+						<div class="contac">
+							<ul><h3>Contacto</h3><br/>
+								<li><a href="contacto_cuentanos.php">Cuéntanos</a></li><br/>
+							</ul>
+						</div>
+					</div>
+					<div id="btnspie">
+						<span id="aviso">Aviso legal</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span id="privacidad">Política de privacidad</span>
+						<div id="textoaviso">
+							<p>DATOS IDENTIFICATIVOS: En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, a continuación se reflejan los siguientes datos: La empresa titular de WildFriends (en adelante, el Site) es WildFriends S.L, con domicilio en C/Miguel Yuste, 40 - 28037 Madrid, con número de C.I.F: B-85635910, inscrita en el Registro Mercantil de Madrid en el tomo 26.455, folio 157, sección 8, hoja M-476760, inscripción 1.</p>
+							<p>USUARIOS: El acceso y/o uso de los portales de WildFriends atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de aplicación independientemente de las Condiciones Generales de Contratación que en su caso resulten de obligado cumplimiento.</p>
+							<p>USO DEL PORTAL: el Site de WildFriends proporciona el acceso a multitud de informaciones, servicios, programas o datos (en adelante, "los contenidos") en Internet pertenecientes a WildFriends o a sus licenciantes, a los que el USUARIO puede tener acceso. El USUARIO asume la responsabilidad del uso del Site. Dicha responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios o contenidos. En dicho registro el USUARIO será responsable de aportar información veraz y lícita. Como consecuencia de este registro, al USUARIO se le puede proporcionar una contraseña de la que será responsable, comprometiéndose a hacer un uso diligente y confidencial de la misma. El USUARIO se compromete a hacer un uso adecuado de los contenidos y servicios (como por ejemplo servicios de chat, foros de discusión o grupos de noticias) que WildFriends ofrece a través de su Site y con carácter enunciativo pero no limitativo, a no emplearlos para (i) incurrir en actividades ilícitas, ilegales o contrarias a la buena fe y al orden público; (ii) difundir contenidos o propaganda de carácter racista, xenófobo, pornográfico-ilegal, de apología del terrorismo o atentatorio contra los derechos humanos; (iii) provocar daños en los sistemas físicos y lógicos de WildFriends, de sus proveedores o de terceras personas, introducir o difundir en la red virus informáticos o cualesquiera otros sistemas físicos o lógicos que sean susceptibles de provocar los daños anteriormente mencionados; (iv) intentar acceder y, en su caso, utilizar las cuentas de correo electrónico de otros usuarios y modificar o manipular sus mensajes. WildFriends se reserva el derecho de retirar todos aquellos comentarios y aportaciones que vulneren el respeto a la dignidad de la persona, que sean discriminatorios, xenófobos, racistas, pornográficos, que atenten contra la juventud o la infancia, el orden o la seguridad pública o que, a su juicio, no resultaran adecuados para su publicación. En cualquier caso, WildFriends no será responsable de las opiniones vertidas por los usuarios a través de los foros, chats, u otras herramientas de participación.</p>
+							<p>PROTECCIÓN DE DATOS: WildFriends cumple con las directrices de la Ley Orgánica 15/1999 de 13 de diciembre de Protección de Datos de Carácter Personal, el Real Decreto 1720/2007 de 21 de diciembre por el que se aprueba el Reglamento de desarrollo de la Ley Orgánica y demás normativa vigente en cada momento, y vela por garantizar un correcto uso y tratamiento de los datos personales del usuario. Para ello, junto a cada formulario de recabo de datos de carácter personal, en los servicios que el USUARIO pueda solicitar a WildFriends, hará saber al USUARIO de la existencia y aceptación de las condiciones particulares del tratamiento de sus datos en cada caso, informándole de la responsabilidad del fichero creado, la dirección del responsable, la posibilidad de ejercer sus derechos de acceso, rectificación, cancelación u oposición, la finalidad del tratamiento y las comunicaciones de datos a terceros en su caso. Asimismo, WildFriends informa que da cumplimiento a la Ley 34/2002 de 11 de julio, de Servicios de la Sociedad de la Información y el Comercio Electrónico y le solicitará su consentimiento al tratamiento de su correo electrónico con fines comerciales en cada momento. </p>
+						</div>
+						<div id="textoprivacidad">
+							<p>Este sitio Web es propiedad de WildFriends, una organización española dedicada a conservación de la naturaleza.</p>
+							<p>La política de privacidad, y con ella este texto, es actualizada periódicamente para su adaptación a la normativa vigente y para la mejora de nuestros sistemas, por lo que recomendamos consultarla periódicamente.</p>
+							<p>El uso continuado de este sitio siguiendo la publicación de los cambios en la política de privacidad implica su aceptación.</p>
+							<p>• WildFriends solo recoge la información personal necesaria para el servicio que presta, solicitada de forma específica y facilitada por el usuario de forma voluntaria.<br/>
+							• WildFriends está comprometida con el cumplimiento de la normativa sobre privacidad y seguridad de datos personales.<br/>
+							• No venderemos o entregaremos tu información a otra organización externa a WildFriends, a menos que nos des autorización expresa y específica para hacerlo.<br/>
+							• Siempre te daremos la opción de terminar tu suscripción con nuestras listas de correo.<br/>
+							• Si tienes menos de 18 años de edad, deberás consultar con tus padres o tutores antes de registrarte en este sitio.</p>
+							<p>Privacidad de información<br/>
+								a) Información personal - como nombre, dirección, número telefónico, dirección de correo electrónico y fecha de nacimiento (donde sea apropiado). Recogemos esta información sólo en relación a actividades específicas. No es necesario que reveles este tipo de información si no lo deseas.<br/>
+
+								b) Información no personal. WildFriends recoge datos tales como direcciones IP (la ubicación del computador en Internet), páginas visitadas y archivos descargados. Esto nos ayuda a determinar cuántas personas usan nuestro sitio, cuántas personas nos visitan de forma regular, qué páginas son más populares y qué páginas lo son menos. Esta información no nos dice nada acerca de tu identidad, sólo nos permite administrar mejorar nuestro servicio.</p>
+							<p>La información personal enviada a través de los formularios en este sitio es almacenada sólo en una base de datos de WildFriends. Aseguramos que WildFriends no compartirá la información que nos entregues en este sitio con organización alguna externa a WildFriends, a menos que nos hayas permitido específicamente hacerlo.</p>
+							<p>Si eres menor de 14 años, necesitas obtener permiso de tus padres o tutores antes de enviar información personal (tu nombre, dirección, correo electrónico, etc.) a nosotros o cualquier otra persona a través de Internet. Animamos a los padres a involucrarse en el uso de Internet de sus hijos y a estar informados acerca de las actividades en las que están participando.</p>
+							<p>Tienes derecho, en cualquier momento, a acceder, pedir una copia de tu información, cancelar o rectificar sus datos, así como a oponerte a su tratamiento, rellenando el <a href="contacto_cuentanos.php">formulario<a> presente en nuestra página</p>
+							<p>Puede haber enlaces en este sitio Web que dirijan a otros sitios Web fuera de nuestro servicio. Cualquier enlace a sitios externos está previsto nada más que para tu referencia y conveniencia. La gestión y contenido de esos sitios está más allá de nuestro control, y no nos hacemos responsables de su contenido u otro material o cualquier producto o servicio publicitado o vendido a través de alguno de esos sitios Web. No seremos responsables bajo circunstancia alguna por daños, directos o indirectos, causados por cualquier uso de ese sitio Web externo vinculado a este sitio Web, seamos o no informados respecto a la posibilidad de esos daños.</p>
+
+							<p>Si tienes alguna pregunta respecto a nuestra política de privacidad, por favor <a href="contacto_cuentanos.php">contáctanos<a>.</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		
+	</body>
+
+</html>

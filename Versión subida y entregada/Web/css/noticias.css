@@ -1,0 +1,245 @@
+﻿#noticias
+{
+		background-color: darkkhaki;
+		width: 950px;
+		height: 1050px;
+		padding-top: 30px;
+		margin: auto;
+		position: relative;
+		
+}
+#n1
+{
+		background-color: darkkhaki;
+		width: 600px;
+		height: 600px;
+		margin-left: 10px;
+		position: absolute;
+		margin-top: 10px;
+		float: left;
+		
+}
+#im1
+{
+		width: 600px;
+		margin-top: 10px;
+		margin: auto;
+}
+#tit1
+{
+		width: 600px;
+		padding-top: 30px;
+		margin: auto;
+		text-decoration: none;
+		
+}
+#tit1 a
+{
+		text-decoration: none;
+}
+#tit1 a:visited{color:darkolivegreen; font-weight: bold; font-size: 45px}
+#tit1 a:link{color:darkolivegreen; font-weight: bold; font-size: 45px}
+#tit1 a:active{color:darkolivegreen; font-weight: bold; font-size: 45px} 
+
+#n2
+{
+		background-color: darkkhaki;
+		width: 300px;
+		height: 290px;
+		margin-left: 640px;
+		position: absolute;
+		margin-top: 10px;
+		float: left;
+		
+}
+#im2
+{
+		width: 300px;
+		margin-top: 10px;
+		margin: auto;
+}
+#tit2
+{
+		width: 300px;
+		padding-top: 20px;
+		margin: auto;
+		text-decoration: none;
+		
+}
+#tit2 a
+{
+		text-decoration: none;
+}
+#tit2 a:visited{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit2 a:link{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit2 a:active{color:darkolivegreen; font-weight: bold; font-size: 20px} 
+
+#n3
+{
+		background-color: darkkhaki;
+		width: 300px;
+		height: 290px;
+		margin-left: 640px;
+		position: absolute;
+		margin-top: 320px;
+		float: left;
+		
+}
+
+#im3
+{
+		width: 300px;
+		height: 175px;
+		margin-top: 10px;
+		margin: auto;
+}
+#tit3
+{
+		width: 300px;
+		padding-top: 20px;
+		margin: auto;
+		text-decoration: none;
+		
+}
+#tit3 a
+{
+		text-decoration: none;
+}
+#tit3 a:visited{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit3 a:link{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit3 a:active{color:darkolivegreen; font-weight: bold; font-size: 20px} 
+
+#n4
+{
+		background-color: darkkhaki;
+		width: 200px;
+		height: 300px;
+		margin-left: 10px;
+		position: absolute;
+		margin-top: 640px;
+		float: left;
+		
+}
+#im4
+{
+		width: 200px;
+		height: 150px;
+		margin-top: 10px;
+		margin: auto;
+}
+#tit4
+{
+		width: 200px;
+		padding-top: 20px;
+		margin: auto;
+		text-decoration: none;
+		
+}
+#tit4 a
+{
+		text-decoration: none;
+}
+#tit4 a:visited{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit4 a:link{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit4 a:active{color:darkolivegreen; font-weight: bold; font-size: 20px} 
+#n5
+{
+		background-color: darkkhaki;
+		width: 200px;
+		height: 200px;
+		margin-left: 250px;
+		position: absolute;
+		margin-top: 640px;
+		float: left;
+		
+}
+#im5
+{
+		width: 200px;
+		height: 150px;
+		margin-top: 10px;
+		margin: auto;
+}
+#tit5
+{
+		width: 200px;
+		padding-top: 20px;
+		margin: auto;
+		text-decoration: none;
+		
+}
+#tit5 a
+{
+		text-decoration: none;
+}
+#tit5 a:visited{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit5 a:link{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit5 a:active{color:darkolivegreen; font-weight: bold; font-size: 20px} 
+
+#n6
+{
+		background-color: darkkhaki;
+		width: 210px;
+		height: 200px;
+		margin-left: 490px;
+		position: absolute;
+		margin-top: 640px;
+		float: left;
+		
+}
+
+#im6
+{
+		width: 210px;
+		height: 150px;
+		margin-top: 10px;
+		margin: auto;
+}
+#tit6
+{
+		width: 200px;
+		padding-top: 20px;
+		margin: auto;
+		text-decoration: none;
+		
+}
+#tit6 a
+{
+		text-decoration: none;
+}
+#tit6 a:visited{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit6 a:link{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit6 a:active{color:darkolivegreen; font-weight: bold; font-size: 20px} 
+#n7
+{
+		background-color: darkkhaki;
+		width: 200px;
+		height: 200px;
+		margin-left: 740px;
+		position: absolute;
+		margin-top: 640px;
+		float: left;
+		
+}
+#im7
+{
+		width: 200px;
+		height: 150px;
+		margin-top: 10px;
+		margin: auto;
+}
+#tit7
+{
+		width: 200px;
+		padding-top: 20px;
+		margin: auto;
+		text-decoration: none;
+		
+}
+#tit7 a
+{
+		text-decoration: none;
+}
+#tit7 a:visited{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit7 a:link{color:darkolivegreen; font-weight: bold; font-size: 20px}
+#tit7 a:active{color:darkolivegreen; font-weight: bold; font-size: 20px} 

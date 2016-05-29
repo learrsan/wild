@@ -1,0 +1,496 @@
+﻿<html>
+	<head>
+	
+		<title>WildFriends | Tienda</title>
+		<link rel="stylesheet" href="css/WFestilo.css" type="text/css"/>
+		<link rel="stylesheet" href="css/tienda.css" type="text/css"/>
+		
+		<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<link type="text/css" href="css/jquery-ui.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+<!--	 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+		<link rel="shortcut icon" href="favicon.ico">
+	
+	</head>
+	
+	<body>
+	
+		<script type="text/javascript">
+							
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+			
+						
+			function inicializar ()	{
+				var x;
+				x=$("#cabizq");
+				x.fadeIn(2000);
+				
+				
+				
+				var x;
+				x=$("#aviso");
+				x.click(mostrarAviso);
+				
+				var x;
+				x=$("#privacidad");
+				x.click(mostrarPriv);
+				
+								
+			}
+				function mostrarAviso(){
+					var x;
+					x=$("#textoaviso");
+					x.dialog({modal:true, "title":"Aviso legal", "width": "800px"});
+				}
+				
+				function mostrarPriv(){
+					var x;
+					x=$("#textoprivacidad");
+					x.dialog({modal:true, "title":"Política de privacidad", "width": "800px", "height": "auto"});
+				}
+				
+<!-- JAVASCRIPT -->
+<!-- elegir peluche -->
+			function eligePeluche(){
+				if (document.getElementById("especie").value == "jaguar"){
+					document.getElementById("precio").value = "20";
+					document.getElementById("imgn").src="imagenes/pelu1.jpg"
+				}
+				
+				if (document.getElementById("especie").value == "panda"){
+					document.getElementById("precio").value = "15";
+					document.getElementById("imgn").src="imagenes/pelu2.jpg"
+				}
+				
+				if (document.getElementById("especie").value == "elefante"){
+					document.getElementById("precio").value = "12";
+					document.getElementById("imgn").src="imagenes/pelu3.jpg"
+				}
+				
+				if (document.getElementById("especie").value == "condor"){
+					document.getElementById("precio").value = "18";
+					document.getElementById("imgn").src="imagenes/pelu4.jpg"
+				}
+				if (document.getElementById("especie").value == "cami"){
+					document.getElementById("precio").value = "25";
+					document.getElementById("imgn").src="imagenes/regalo3.jpg"
+				}
+				if (document.getElementById("especie").value == "lib"){
+					document.getElementById("precio").value = "30";
+					document.getElementById("imgn").src="imagenes/regalo2.jpg"
+				}
+			}
+			
+<!-- calculo de unidades -->
+			function calcularUnidades(){
+				var unid1 = document.getElementById("unidad").value;
+					
+					
+					if (isNaN(unid1)){
+						alert("Por favor, introduce las unidades en número");
+					}
+			}
+			
+<!-- calculo total -->
+			function calcularTotal(){
+				var unid2 = document.getElementById("unidad").value;
+				var prec = document.getElementById("precio").value;
+				
+				var tot = unid2 * prec;
+				
+				if (unid2.length==0){
+						alert("Por favor, introduce cuántas unidades quieres");
+					}
+				else {
+					document.getElementById("total").value = tot + "€";
+				}
+			}
+	
+<!-- comprobar teléfono -->
+			
+			function comprobarTelefono(){
+				var telef1 = document.getElementById("telefon").value;
+					
+					
+					if (isNaN(telef1)){
+						alert("Por favor, introduce el teléfono en cifras");
+					}
+					else if (telef1.length<9){
+						alert("El teléfono debe tener al menos 9 cifras");
+					}
+			}
+	
+<!-- comprobar correo -->
+			function comprobarCorreo(){
+					var correo1 = document.getElementById("correo").value;
+					var arroba = correo1.indexOf("@");
+					var punto = correo1.indexOf(".",arroba);
+					
+						if (arroba == -1 || punto ==-1)  {
+								alert("Formato de correo incorrecto");
+						}
+				}
+
+				
+<!-- enviar formulario -->				
+			function enviarForm(){
+				var priv = document.getElementById("priva").checked;
+				
+				var peluc = document.getElementById("especie").value;
+				var prec1 = document.getElementById("precio").value;
+				var unid3 = document.getElementById("unidad").value;
+				var tot1 = prec1 * unid3;
+				
+				
+				var nombre1 = document.getElementById("nombre").value;
+				var apellidos1 = document.getElementById("apellidos").value;
+				var correo2 = document.getElementById("correo").value;
+				var urgente = document.getElementById("modoenvio1").checked;
+				var ordinario = document.getElementById("modoenvio2").checked;
+				var recoger = document.getElementById("modoenvio3").checked;
+				
+				var lnombre1 = nombre1.length;
+				var lapellidos1 = apellidos1.length;
+				var lcorreo2 = correo2.length;
+				
+				var regalo ="";
+					if(document.getElementById("chapa").checked){
+						regalo = regalo + " chapa ";
+					}
+					if(document.getElementById("postal").checked){
+						regalo = regalo = regalo + " postal ";
+					}
+					
+				var sexo ="";
+			
+					if (document.getElementById("hombre").checked){
+						sexo="Bienvenido";
+					}
+					else {
+						if (document.getElementById("mujer").checked)
+						{sexo="Bienvenida";}
+						
+						else{sexo="Bienvenido/a"
+						}
+					}
+					
+				
+				var envio ="";
+					if(document.getElementById("modoenvio1").checked){
+						envio = document.getElementById("modoenvio1").value;
+					}
+					if(document.getElementById("modoenvio2").checked){
+						envio = document.getElementById("modoenvio2").value;
+					}
+					if(document.getElementById("modoenvio3").checked){
+						envio = document.getElementById("modoenvio3").value;
+					}
+				
+				
+						if (priv==false){
+							alert("Por favor, acepta la politica de privacidad y las condiciones del servicio");
+						}
+						else if (lnombre1==0){
+							alert("El campo *Nombre es obligatorio");
+						}
+						else if (lapellidos1==0){
+							alert("El campo *Apellidos es obligatorio");
+						}
+						else if (lcorreo2==0){
+							alert("El campo *Correo electrónico es obligatorio");
+						}
+						else if (urgente==false && ordinario==false && recoger==false){
+							alert("El campo *Modo de envío es obligatorio");
+						}
+						else{
+							alert(sexo+" "+nombre1+". Gracias por tu pedido."+"\n\nResumen de pedido \n-Peluche elegido: " + peluc + "\n-Precio: " + prec1 +"€ \n-Unidades: "+ unid3 + "\n-Total: "+ tot1 +"€ \n-Regalo/s: "+ regalo + "\n-Modo de envío: " +envio)
+						}
+					
+			}
+			
+		</script>	
+				
+				
+		</script>
+		
+			<div id="contenedor">
+				
+				<div id="cabecera">
+				
+					<div id="cabsup">
+				<!-- 	Menú -->
+						<div id="menu">
+						 <ul class="navegacion">
+													
+						
+							<li><a>Conócenos</a>
+							
+								<ul>
+									<li><a href="index.html">Quiénes somos</a></li><br/>
+									<li><a href="quienessomos_historia.html">Historia</a></li><br/>
+									<li><a href="quienessomos_mundo.html">WF en el mundo</a></li><br/>
+								
+								</ul>		
+													
+							
+							</li>				
+						
+							
+							<li><a>Proyectos</a>
+							
+								<ul>
+								
+									<li><a href="proyectos_acuaticos.html">Sist. acuáticos</a></li><br/>
+									<li><a href="proyectos_terrestres.html">Sist. terrestres</a></li><br/>
+									<li><a href="proyectos_galeria.html">Galería</a></li><br/>
+									<li><a href="proyectos_ninos.html">Para niños</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Infórmate</a>
+							
+								<ul>
+								
+									<li><a href="informate_eventos.html">Eventos</a></li><br/>
+									<li><a href="informate_noticias.html">Noticias</a></li><br/>
+									<li><a href="informate_trabaja.html">Trabajo</a></li><br/>
+									<li><a href="informate_listaroja.html">Lista Roja IUCN</a></li><br/>
+									<li><a href="informate_faq.html">FAQ</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Colabora</a>
+							
+								<ul>
+									<li><a href="colabora_donaciones.html">Donaciones</a></li><br/>
+									<li><a href="colabora_voluntariado.html">Voluntariado</a></li><br/>
+									<li><a href="colabora_tienda.html">Tienda</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Contacto</a>
+									
+									<ul>
+									<li><a href="contacto_cuentanos.php">Cuéntanos</a></li>
+									</ul>
+												
+								</li>
+						
+						</ul>
+						<!-- Redes sociales -->
+							<div id="fb"><a href="https://es-es.facebook.com/" target="_blank"><img src="imagenes/facebook.jpg" width="25px"/></a></div>
+							<div id="tw"><a href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twitter.jpg" width="28px"/></a></div>
+							<div id="gp"><a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img src="imagenes/gplus.jpg" width="25px"/></a></div>
+							<div id="yt"><a href="https://www.youtube.com/?hl=es&gl=ES" target="_blank"><img src="imagenes/youtube.jpg" width="28px"/></a></div>
+						
+						</div>
+					</div>
+					<!-- Logo -->
+					<div id="cabizq">
+						<a href="index.html"><img src="imagenes/logo.jpg" id="imagenlogo" height="150px"></a>
+					</div>
+					<!-- Nombre -->
+					<div id="cabder">
+						WildFriends
+					</div>
+					
+											
+				</div>
+			<!-- 	Contenido -->
+				<div id="contenido">
+					<div class="seccion">Tienda</div>
+				
+
+					<div class="info">
+						<p>Colabora con nosotros adquiriendo alguno de los productos disponibles. Todo el dinero recaudado irá destinado a estudiar los distintos hábitats con el fin de su conservación.</p>
+						
+					</div>
+					
+					<!-- elección de compra -->
+				<div id="elegir">
+					<form action="" method="post">
+
+						<fieldset>
+							<legend>Elige tu artículo</legend>
+							<div id="elige">
+					<!-- elegir peluche -->		
+								<label for="especie" style="color:black;">Artículo:</label> <br/>
+								<select id="especie" onChange="eligePeluche()">
+									<option value="">Selecciona:</option>
+									<option value="jaguar">Peluche Jaguar</option>
+									<option value="panda">Peluche Panda gigante</option>
+									<option value="elefante">Peluche Elefante africano</option>
+									<option value="condor">Peluche Cóndor de California</option>
+									<option value="cami">Camiseta WildFriends</option>
+									<option value="lib">Libro "Species of the Edge of Survival"</option>
+								</select>
+					<!-- precio -->			
+								<label for="precio" style="color: black">Precio</label>
+								<input type="text" id="precio" value="" disabled /><br/><br/>
+					<!-- unidades -->			
+								<label for="unidad" style="color: black">Unidades:</label>
+								<input type="text" id="unidad" value="" onBlur="calcularUnidades()"/><br/><br/>
+					<!-- calculo total -->			
+								<input type="button" id="btntotal" name="total" value="Total" onClick="calcularTotal()"/>
+								<input type="text"  id="total" name="total" value="" /><br/><br/>
+					<!-- regalo -->			
+								<label for="regalo" style="color:black;">Elige tu regalo:</label> <br/>
+								<input type="checkbox" id="chapa" value="chapa" />Chapa
+								<input type="checkbox" id="postal" value="postal" />Postal<br/><br/>
+								
+							</div>
+							
+							<div id="peluche"><img src="imagenes/suregalo.jpg" id="imgn" /></div>
+							
+						</fieldset>
+					</form>
+				</div>
+				
+<!-- datos del comprador -->								
+				<div id="datospersonales">
+					<form action="" method="post">
+						<fieldset> 
+							<legend>Datos personales</legend>
+								<div id="datosp">
+									<div id="aster">Los campos con * son obligatorios</div><br/><br/>
+						<!-- nombre -->									
+									<label for="nombre" style="color:black;">*Nombre:</label><br/>
+									<input type="text" id="nombre" value=""/><br/><br/>
+						<!-- apellidos -->									
+									<label for="apellidos" style="color:black;">*Apellidos:</label><br/>
+									<input type="text" id="apellidos" value=""/><br/><br/>
+						<!-- sexo -->				
+									<label for="sexo" style="color:black;">Sexo</label><br/>
+									<input type="radio" id="hombre" name="sex"/>Hombre
+									<input type="radio" id="mujer" name="sex"/>Mujer<br/><br/>
+						<!-- telefono -->									
+									<label for="telefon" style="color:black;">Teléfono:</label><br/>
+									<input type="text" id="telefon" maxlength="9" value="" onBlur="comprobarTelefono()"/><br/><br/>
+						<!-- correo electrónico -->									
+									<label for="correo" style="color:black;">*Correo eléctronico:</label> <br/>
+									<input type="email"  size="30" id="correo" name="correo" value="" onBlur="comprobarCorreo()" /><br/><br/>
+									
+						<!-- modo de envio -->									
+									<label for="modoenvio" style="color:black;">*Modo de envío:</label> <br/>
+									<input type="radio" id="modoenvio1" name="envio" value="envío urgente"/>Envío urgente
+									<input type="radio" id="modoenvio2" name="envio" value="envío ordinario"/>Envío ordinario
+									<input type="radio" id="modoenvio3" name="envio" value="recoger en Correos"/>Recoger en Correos
+											
+								</div>
+						</fieldset>
+					</form>
+				</div>
+<!-- botonera enviar -->
+				<div id="enviar">
+					
+					<div id="botones">
+						<input type="button"  value="Enviar" onclick="enviarForm()" />						
+					</div>
+					
+<!-- politica privacidad -->
+					
+					<div id="privac">
+						<input type="checkbox" id="priva" value="" >Acepto la política de protección de datos y las condiciones del servicio.</input>
+					</div>
+					
+				</div>
+					<br/>
+				
+			
+				</div>
+				<!-- Pie -->
+				<div class="pie">
+					<div id="menupie">
+						<div class="conoc">
+							<ul><h3>Conócenos</h3><br/>
+								<li><a href="index.html">Quiénes somos</a></li><br/>
+								<li><a href="quienessomos_historia.html">Historia</a></li><br/>
+								<li><a href="quienessomos_mundo.html">WF en el mundo</a></li><br/>
+							</ul>
+						</div>
+						<div class="proy">
+							<ul><h3>Proyectos</h3><br/>
+								<li><a href="proyectos_acuaticos.html">Sist. acuáticos</a></li><br/>
+								<li><a href="proyectos_terrestres.html">Sist. terrestres</a></li><br/>
+								<li><a href="proyectos_galeria.html">Galería</a></li><br/>
+								<li><a href="proyectos_ninos.html">Para niños</a></li><br/>
+							</ul>
+						</div>
+						<div class="infor">
+							<ul><h3>Infórmate</h3><br/>
+								<li><a href="informate_eventos.html">Eventos</a></li><br/>
+								<li><a href="informate_noticias.html">Noticias</a></li><br/>
+								<li><a href="informate_trabaja.html">Trabajo</a></li><br/>
+								<li><a href="informate_listaroja.html">Lista Roja IUCN</a></li><br/>
+								<li><a href="informate_faq.html">FAQ</a></li><br/>
+							</ul>
+							
+						</div>
+						<div class="colab">
+							<ul><h3>Colabora</h3><br/>
+								<li><a href="colabora_donaciones.html">Donaciones</a></li><br/>
+								<li><a href="colabora_voluntariado.html">Voluntariado</a></li><br/>
+								<li><a href="colabora_tienda.html">Tienda</a></li><br/>
+							</ul>
+						</div>
+						<div class="contac">
+							<ul><h3>Contacto</h3><br/>
+								<li><a href="contacto_cuentanos.php">Cuéntanos</a></li><br/>
+							</ul>
+						</div>
+					</div>
+					<div id="btnspie">
+						<span id="aviso">Aviso legal</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span id="privacidad">Política de privacidad</span>
+						<div id="textoaviso">
+							<p>DATOS IDENTIFICATIVOS: En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, a continuación se reflejan los siguientes datos: La empresa titular de WildFriends (en adelante, el Site) es WildFriends S.L, con domicilio en C/Miguel Yuste, 40 - 28037 Madrid, con número de C.I.F: B-85635910, inscrita en el Registro Mercantil de Madrid en el tomo 26.455, folio 157, sección 8, hoja M-476760, inscripción 1.</p>
+							<p>USUARIOS: El acceso y/o uso de los portales de WildFriends atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de aplicación independientemente de las Condiciones Generales de Contratación que en su caso resulten de obligado cumplimiento.</p>
+
+							<p>USO DEL PORTAL: el Site de WildFriends proporciona el acceso a multitud de informaciones, servicios, programas o datos (en adelante, "los contenidos") en Internet pertenecientes a WildFriends o a sus licenciantes, a los que el USUARIO puede tener acceso. El USUARIO asume la responsabilidad del uso del Site. Dicha responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios o contenidos. En dicho registro el USUARIO será responsable de aportar información veraz y lícita. Como consecuencia de este registro, al USUARIO se le puede proporcionar una contraseña de la que será responsable, comprometiéndose a hacer un uso diligente y confidencial de la misma. El USUARIO se compromete a hacer un uso adecuado de los contenidos y servicios (como por ejemplo servicios de chat, foros de discusión o grupos de noticias) que WildFriends ofrece a través de su Site y con carácter enunciativo pero no limitativo, a no emplearlos para (i) incurrir en actividades ilícitas, ilegales o contrarias a la buena fe y al orden público; (ii) difundir contenidos o propaganda de carácter racista, xenófobo, pornográfico-ilegal, de apología del terrorismo o atentatorio contra los derechos humanos; (iii) provocar daños en los sistemas físicos y lógicos de WildFriends, de sus proveedores o de terceras personas, introducir o difundir en la red virus informáticos o cualesquiera otros sistemas físicos o lógicos que sean susceptibles de provocar los daños anteriormente mencionados; (iv) intentar acceder y, en su caso, utilizar las cuentas de correo electrónico de otros usuarios y modificar o manipular sus mensajes. WildFriends se reserva el derecho de retirar todos aquellos comentarios y aportaciones que vulneren el respeto a la dignidad de la persona, que sean discriminatorios, xenófobos, racistas, pornográficos, que atenten contra la juventud o la infancia, el orden o la seguridad pública o que, a su juicio, no resultaran adecuados para su publicación. En cualquier caso, WildFriends no será responsable de las opiniones vertidas por los usuarios a través de los foros, chats, u otras herramientas de participación.</p>
+
+							<p>PROTECCIÓN DE DATOS: WildFriends cumple con las directrices de la Ley Orgánica 15/1999 de 13 de diciembre de Protección de Datos de Carácter Personal, el Real Decreto 1720/2007 de 21 de diciembre por el que se aprueba el Reglamento de desarrollo de la Ley Orgánica y demás normativa vigente en cada momento, y vela por garantizar un correcto uso y tratamiento de los datos personales del usuario. Para ello, junto a cada formulario de recabo de datos de carácter personal, en los servicios que el USUARIO pueda solicitar a WildFriends, hará saber al USUARIO de la existencia y aceptación de las condiciones particulares del tratamiento de sus datos en cada caso, informándole de la responsabilidad del fichero creado, la dirección del responsable, la posibilidad de ejercer sus derechos de acceso, rectificación, cancelación u oposición, la finalidad del tratamiento y las comunicaciones de datos a terceros en su caso. Asimismo, WildFriends informa que da cumplimiento a la Ley 34/2002 de 11 de julio, de Servicios de la Sociedad de la Información y el Comercio Electrónico y le solicitará su consentimiento al tratamiento de su correo electrónico con fines comerciales en cada momento. </p>
+						</div>
+						<div id="textoprivacidad">
+							<p>Este sitio Web es propiedad de WildFriends, una organización española dedicada a conservación de la naturaleza.</p>
+							<p>La política de privacidad, y con ella este texto, es actualizada periódicamente para su adaptación a la normativa vigente y para la mejora de nuestros sistemas, por lo que recomendamos consultarla periódicamente.</p>
+							<p>El uso continuado de este sitio siguiendo la publicación de los cambios en la política de privacidad implica su aceptación.</p>
+							<p>• WildFriends solo recoge la información personal necesaria para el servicio que presta, solicitada de forma específica y facilitada por el usuario de forma voluntaria.<br/>
+							• WildFriends está comprometida con el cumplimiento de la normativa sobre privacidad y seguridad de datos personales.<br/>
+							• No venderemos o entregaremos tu información a otra organización externa a WildFriends, a menos que nos des autorización expresa y específica para hacerlo.<br/>
+							• Siempre te daremos la opción de terminar tu suscripción con nuestras listas de correo.<br/>
+							• Si tienes menos de 18 años de edad, deberás consultar con tus padres o tutores antes de registrarte en este sitio.</p>
+							<p>Privacidad de información<br/>
+								a) Información personal - como nombre, dirección, número telefónico, dirección de correo electrónico y fecha de nacimiento (donde sea apropiado). Recogemos esta información sólo en relación a actividades específicas. No es necesario que reveles este tipo de información si no lo deseas.<br/>
+
+								b) Información no personal. WildFriends recoge datos tales como direcciones IP (la ubicación del computador en Internet), páginas visitadas y archivos descargados. Esto nos ayuda a determinar cuántas personas usan nuestro sitio, cuántas personas nos visitan de forma regular, qué páginas son más populares y qué páginas lo son menos. Esta información no nos dice nada acerca de tu identidad, sólo nos permite administrar mejorar nuestro servicio.</p>
+							<p>La información personal enviada a través de los formularios en este sitio es almacenada sólo en una base de datos de WildFriends. Aseguramos que WildFriends no compartirá la información que nos entregues en este sitio con organización alguna externa a WildFriends, a menos que nos hayas permitido específicamente hacerlo.</p>
+							<p>Si eres menor de 14 años, necesitas obtener permiso de tus padres o tutores antes de enviar información personal (tu nombre, dirección, correo electrónico, etc.) a nosotros o cualquier otra persona a través de Internet. Animamos a los padres a involucrarse en el uso de Internet de sus hijos y a estar informados acerca de las actividades en las que están participando.</p>
+							<p>Tienes derecho, en cualquier momento, a acceder, pedir una copia de tu información, cancelar o rectificar sus datos, así como a oponerte a su tratamiento, rellenando el <a href="contacto_cuentanos.php">formulario<a> presente en nuestra página</p>
+							<p>Puede haber enlaces en este sitio Web que dirijan a otros sitios Web fuera de nuestro servicio. Cualquier enlace a sitios externos está previsto nada más que para tu referencia y conveniencia. La gestión y contenido de esos sitios está más allá de nuestro control, y no nos hacemos responsables de su contenido u otro material o cualquier producto o servicio publicitado o vendido a través de alguno de esos sitios Web. No seremos responsables bajo circunstancia alguna por daños, directos o indirectos, causados por cualquier uso de ese sitio Web externo vinculado a este sitio Web, seamos o no informados respecto a la posibilidad de esos daños.</p>
+
+							<p>Si tienes alguna pregunta respecto a nuestra política de privacidad, por favor <a href="contacto_cuentanos.php">contáctanos<a>.</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		
+	</body>
+
+</html>
+
+

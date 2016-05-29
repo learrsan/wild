@@ -1,0 +1,54 @@
+﻿/* Información */
+			.info
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						padding: 20px;
+						padding-top: 50px;
+						text-align: justify;
+						float: left;
+						width: 960px;
+						height: auto;
+						background-color: DarkKhaki;
+						
+			}
+			 h1
+			{
+						font-size: 30px;
+						text-align: center;
+			}
+			
+			.enlace:visited{color:DarkOliveGreen;}
+			.enlace:link{color:DarkOliveGreen;}
+			.enlace:active{color:DarkOliveGreen;}
+			
+/* Imagenes */
+			.imagenes
+			{
+						width: 1000px;
+						height: auto;
+						float: left;
+						background-color: DarkKhaki;
+			}
+			#acu2
+			{
+						margin-left: 100px;
+						border-radius: 50px;
+												
+			}
+			#acu1
+			{
+						margin-left: 100px;
+						border-radius: 50px;
+			}
+			#jag1
+			{
+						margin-left: 100px;
+						border-radius: 50px;
+			}
+			#avu1
+			{
+						margin-left: 100px;
+						border-radius: 50px;
+			}
+			

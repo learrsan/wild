@@ -1,0 +1,505 @@
+﻿<html>
+	<head>
+	
+		<title>WildFriends | Donaciones</title>
+		<link rel="stylesheet" href="css/WFestilo.css" type="text/css"/>
+		<link rel="stylesheet" href="css/donaciones.css" type="text/css"/>
+		
+		<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<link type="text/css" href="css/jquery-ui.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+<!--	 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+		<link rel="shortcut icon" href="favicon.ico">
+		
+	</head>
+	
+	<body>
+	
+		<script type="text/javascript">
+			
+<!-- JQUERY -->
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+			
+						
+			function inicializar ()	{
+				var x;
+				x=$("#cabizq");
+				x.fadeIn(2000);
+				
+				var x;
+				x=$("#aviso");
+				x.click(mostrarAviso);
+				
+				var x;
+				x=$("#privacidad");
+				x.click(mostrarPriv);
+				
+				var x;
+				x=$("#nacimiento");
+				x.datepicker({maxDate: 0, changeMonth: true, changeYear: true});
+				
+				$.datepicker.regional['es'] = { closeText: 'Fermer', prevText: 'Previo', nextText: 'Próximo',
+				monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio', 'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'], 
+				monthNamesShort: ['Ene','Feb','Mar','Abr','May','Jun', 'Jul','Ago','Sep','Oct','Nov','Dic'], 
+				monthStatus: 'Voir un autre mois', 
+				yearStatus: 'Voir un autre année', 
+				dayNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'], 
+				dayNamesShort: ['Dom','Lun','Mar','Mie','Jue','Vie','Sáb'], 
+				dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'], 
+				dateFormat: 'dd/mm/yy', 
+				firstDay: 0, 
+				initStatus: 'Selecciona la fecha', isRTL: false};$.datepicker.setDefaults($.datepicker.regional['es']);
+								
+			}
+				
+				
+				
+<!-- JAVASCRIPT -->
+				function cambiarImagen(x){
+					var img = document.getElementById("grande").src="imagenes/foto"+x+".jpg";
+					i++;
+					
+				}
+				
+				function mostrarRegalo(x){
+					var img2 = document.getElementById("regalo2").src="imagenes/regalo"+x+".jpg";
+					i++;
+					
+				}
+				
+				
+				
+				function enviarForm(){
+					var priv = document.getElementById("priva").checked;
+					var telef1 = document.getElementById("telefon").value;	
+					var correo2 = document.getElementById("correo1").value;
+					var arroba = correo2.indexOf("@");
+					var punto = correo2.indexOf(".",arroba); 
+					var nombre1 = document.getElementById("nombre").value;
+					var apellidos1 = document.getElementById("apellidos").value;
+					var correo2 = document.getElementById("correo1").value;
+					var lnombre1 = nombre1.length;
+					var lapellidos1 = apellidos1.length;
+					var lcorreo2 = correo2.length;
+					var ncu = document.getElementById("numcuenta").value;
+					var lncu = ncu.length;
+					var mpago1 = document.getElementById("modopago1").checked;
+					var mpago2 = document.getElementById("modopago2").checked;
+					var mpago3 = document.getElementById("modopago3").checked;
+							
+						if (priv==false){
+							alert("Por favor, acepta la política de protección de datos y las condiciones del servicio.")
+						}
+						else if (lnombre1==0){
+							alert("El campo *Nombre* es obligatorio");
+						}
+						else if (lapellidos1==0){
+							alert("El campo *Apellidos* es obligatorio");
+						}
+						else if (telef1.length<9){
+							alert("El campo *Teléfono* debe tener al menos 9 cifras");
+						}
+						else if (isNaN(telef1)){
+							alert("Por favor, introduce el teléfono en cifras");
+						}
+						else if (lcorreo2==0){
+							alert("El campo *Correo electrónico* es obligatorio");
+						}
+									
+						else if (arroba == -1 || punto ==-1)  {
+								alert("Formato de correo incorrecto");
+						}
+						else if (lncu==0){
+							alert("El campo *Número de cuenta* es obligatorio");
+						}
+						else if (mpago1==false && mpago2==false && mpago3==false){
+							alert("Por favor, selecciona un modo de pago");
+						}
+						
+		
+							
+							
+							
+							
+							
+								
+								/*if (arroba == -1)  {
+								alert("Email incorrecto. Falta @");
+								}
+								else if (punto == -1){
+								alert("Email incorrecto. Falta .")
+								}*/
+									
+								else{
+								alert("Gracias por tu aportación.");
+								}
+						}
+				
+				
+				
+				
+				
+				function mostrarAviso(){
+					var x;
+					x=$("#textoaviso");
+					x.dialog({modal:true, "title":"Aviso legal", "width": "800px"});
+				}
+				
+				function mostrarPriv(){
+					var x;
+					x=$("#textoprivacidad");
+					x.dialog({modal:true, "title":"Política de privacidad", "width": "800px", "height": "auto"});
+				}
+		</script>
+		
+		<div id="contenedor">
+			
+			<div id="cabecera">
+				
+				<div id="cabsup">
+						<div id="menu">
+						 <ul class="navegacion">
+													
+						
+							<li><a>Conócenos</a>
+							
+								<ul>
+									<li><a href="index.html">Quiénes somos</a></li><br/>
+									<li><a href="quienessomos_historia.html">Historia</a></li><br/>
+									<li><a href="quienessomos_mundo.html">WF en el mundo</a></li><br/>
+								
+								</ul>		
+													
+							
+							</li>				
+						
+							
+							<li><a>Proyectos</a>
+							
+								<ul>
+								
+									<li><a href="proyectos_acuaticos.html">Sist. acuáticos</a></li><br/>
+									<li><a href="proyectos_terrestres.html">Sist. terrestres</a></li><br/>
+									<li><a href="proyectos_galeria.html">Galería</a></li><br/>
+									<li><a href="proyectos_ninos.html">Para niños</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Infórmate</a>
+							
+								<ul>
+								
+									<li><a href="informate_eventos.html">Eventos</a></li><br/>
+									<li><a href="informate_noticias.html">Noticias</a></li><br/>
+									<li><a href="informate_trabaja.html">Trabajo</a></li><br/>
+									<li><a href="informate_listaroja.html">Lista Roja IUCN</a></li><br/>
+									<li><a href="informate_faq.html">FAQ</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Colabora</a>
+							
+								<ul>
+									<li><a href="colabora_donaciones.html">Donaciones</a></li><br/>
+									<li><a href="colabora_voluntariado.html">Voluntariado</a></li><br/>
+									<li><a href="colabora_tienda.html">Tienda</a></li>
+								</ul>		
+							
+							</li>
+							
+							<li><a>Contacto</a>
+									
+									<ul>
+									<li><a href="contacto_cuentanos.php">Cuéntanos</a></li>
+									</ul>
+												
+								</li>
+						
+						</ul>
+							<div id="fb"><a href="https://es-es.facebook.com/" target="_blank"><img src="imagenes/facebook.jpg" width="25px"/></a></div>
+							<div id="tw"><a href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twitter.jpg" width="28px"/></a></div>
+							<div id="gp"><a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img src="imagenes/gplus.jpg" width="25px"/></a></div>
+							<div id="yt"><a href="https://www.youtube.com/?hl=es&gl=ES" target="_blank"><img src="imagenes/youtube.jpg" width="28px"/></a></div>
+						
+						</div>
+					</div>
+				
+				<div id="cabizq">
+					<a href="index.html"><img src="imagenes/logo.jpg" id="imagenlogo" height="150px"></a>
+				</div>
+				
+				<div id="cabder">
+					WildFriends
+				</div>
+								
+			</div> 
+			
+			
+			
+			<div id="contenido">
+				<div class="seccion">Donaciones</div>
+				
+			
+<!-- Información sobre la página -->
+				<div id="info">
+					"WildFriends" es una empresa que se dedica a ayudar a especies animales y hábitats vulnerables. 
+					Colabora con nosotros y estarás ayudando en la conservación de estas especies.
+				</div>
+				<br/>
+			
+			
+<!-- Presentación de las especies -->
+				<div id="especies">
+					
+						
+							<div id="titespecies" style="font-size: 40px">Especies</div>
+							
+								<div id="info">
+									A continuación te presentamos las especies presentes actualmente en nuestro programa. 
+									Cada especie tiene un donativo asociado determinado dependiendo de su estado de conservación en la naturaleza según la Lista Roja IUCN.<br/><br/>
+									Especie en peligro crítico (CR): 20€<br/>
+									Especie en peligro (EN): 15€<br/>
+									Especie vulnerable (VU): 10€<br/>
+									Especie casi amenazada (NT): 5€<br/><br/>
+								</div>
+								
+							<!-- Foto grande -->
+								<div id="imgg"><img src="imagenes/foto1.jpg" id="grande" style="border-radius:100%; border: 2px solid black;"width="400px"></div><br/>
+							
+							<!-- Miniaturas -->
+								<div id="img1"><a href="http://www.iucnredlist.org/details/15953/0" target="_blank"><img src="imagenes/foto1.jpg" id="imagen" style="border-radius:100px;" width="100px" onmouseOver="cambiarImagen(1)" ></a><br/>
+								<strong>Jaguar</strong> <br/><i>(Panthera onca)</i> <br/>NT</div>
+								
+								<div id="img2"><a href="http://www.iucnredlist.org/details/712/0" target="_blank"><img src="imagenes/foto2.jpg" id="imagen" style="border-radius:100px;" width="100px" onmouseOver="cambiarImagen(2)" ></a><br/>
+								<strong>Panda gigante</strong> <br/><i>(Ailuropoda melanoleuca)</i> <br/>EN</div>
+								
+								<div id="img3"><a href="http://www.iucnredlist.org/details/12392/0" target="_blank"><img src="imagenes/foto3.jpg" id="imagen"  style="border-radius:100px; " width="100px" onmouseOver="cambiarImagen(3)" ></a><br/>
+								<strong>Elefante africano</strong> <br/><i>(Loxodonta africana)</i> <br/>VU</div>
+								
+								<div id="img4"><a href="http://www.iucnredlist.org/details/22697636/0" target="_blank"><img src="imagenes/foto4.jpg" id="imagen"  style="border-radius:100px;" width="100px" onmouseOver="cambiarImagen(4)" ></a><br/>
+								<strong>Cóndor de California</strong> <br/><i>(Gymnogyps californianus)</i><br/>CR </div>
+								
+								
+		
+				</div>
+								
+								<div id="info">
+									Si quieres colaborar señala con qué especie, rellena tus datos personales y bancarios y pincha el botón Enviar.<br/>
+									¡¡Gracias!!
+								</div>
+
+<!-- Elegir especie -->
+				<div id="elegir">
+					<form action="" method="post">
+						<fieldset> 
+							<legend><h3>Elige la especie</h3></legend>
+
+								<div id="elige">
+									<label for="especie" style="color:black;">Especie:</label> <br/>
+									<select id="especie" onChange="eligeAnimal()">
+												<option value=""></option>
+												<option value="5">Jaguar</option>
+												<option value="15">Panda gigante</option>
+												<option value="10">Elefante africano</option>
+												<option value="20">Cóndor de California</option>
+									</select>
+									<br/> <br/>
+									
+									<!-- <label for="precio" style="color: DarkOliveGreen;">Precio:</label>  -->
+									<!-- <input type="text"  size="10" id="precio" name="precio" value="" /><br/><br/> -->
+									
+									<!-- <label for="donativo" style="color:black;">Nº de donativos:</label> <br/>
+									<input type="text"  size="30" id="donativo" name="donativo" value="" /><br/><br/> -->
+																
+									
+									<!-- <img src="imagenes/btntotal.jpg" id="btn" style="border-radius:100px;" width="125px"></br>
+									<input type="text"  size="30" id="total" name="total" value="" /><br/><br/> -->
+									
+									<label for="regalo" style="color:black;">Elige tu regalo:</label> <br/>
+									<input type="radio" id="peluche" name="ragalo" value="peluche" />Peluche
+									<input type="radio" id="libro" name="ragalo" value="libro" />Libro
+									<input type="radio" id="camiseta" name="ragalo" value="camiseta" />Camiseta<br/><br/>
+									
+									
+								</div>
+												
+						</fieldset>
+					</form>
+				</div>					
+								
+								
+											
+				
+<!-- 	Datos personales -->
+				<div id="datospersonales">
+					<form action="" method="post">
+						<fieldset> 
+							<legend><h3>Datos personales</h3></legend>
+
+								<div id="datosp">
+									<label for="nombre" style="color:black;">Nombre:</label> <br/>
+									<input type="text"  size="30" id="nombre" name="nombre" value="" /><br/><br/>
+					 
+									<label for="apellidos" style="color:black;">Apellidos:</label> <br/>
+									<input type="text" size="30" id="apellidos"  value="" /><br/><br/>
+									
+									<label for="sexo" style="color:black;">Sexo:</label> <br/>
+									<input type="radio" id="hombre" name="pago"/>Hombre
+									<input type="radio" id="mujer" name="pago"/>Mujer<br/><br/>
+									
+								
+									<label for="nacimiento" style="color:black;">Fecha de nacimiento:</label> <br/>
+									<input type="text" size="30" id ="nacimiento" name="date_control" /><br/><br/>
+
+																		
+									<label for="telefon" style="color:black;">Teléfono:</label> <br/>
+									<input type="text"  size="30" id="telefon" name="telefon" maxlength="9" value="" /><br/><br/>
+					 
+									<label for="correo1" style="color:black;">Correo eléctronico:</label> <br/>
+									<input type="email"  size="30" id="correo1" name="correo1" value="" />
+								</div>
+							
+								<div id="frase1">
+									"Hoy día somos nosotros, los seres humanos, los culpables de que haya cada vez más especies en peligro de extinción."<br/> Jane Goodall.
+								</div>	
+						</fieldset>
+					</form>
+									
+				</div>
+				
+				
+				
+<!-- 	Datos bancarios -->
+				<div id="datosbancarios">
+					<form action="" method="post">
+						<fieldset> 
+							<legend><h3>Datos bancarios</h3></legend>
+
+								<div id="datobn">
+									<label for="numcuenta" style="color:black;">Número de cuenta:</label> <br/>
+									IBAN-<input type="text"  size="2" maxlength="4" id="numcuenta1" value="" />
+									Ent. banc.-<input type="text"  size="2" maxlength="4" id="numcuenta1" value="" />
+									Sucursal-<input type="text"  size="2" maxlength="4" id="numcuenta1" value="" />
+									DC-<input type="text"  size="1" maxlength="2" id="numcuenta1" value="" />
+									Nºcuenta-<input type="text"  size="8" maxlength="10" id="numcuenta" value="" /><br/><br/>	
+								</div>	
+																
+								<div id="modopago">
+									<label for="modopago" style="color:black;">Modo de pago:</label> <br/>
+									<input type="radio" id="modopago1" name="pago"/>Pago único
+									<input type="radio" id="modopago2" name="pago"/>Pago mensual
+									<input type="radio" id="modopago3" name="pago"/>Pago anual
+								</div>
+							
+						</fieldset>
+					</form>
+									
+								
+								
+						
+				</div>
+
+<!-- 	Enviar formulario -->
+					<div id="enviar">
+						<div id="botones">
+									<!-- <input type="button" value="Enviar" style='width:100px; height:30px'onclick="enviarForm()" /> -->
+									<img src="imagenes/btnenviar.jpg" id="btn" style="border-radius:100px;" width="100px" onClick="enviarForm()">
+						</div>
+						<div id="privac">
+									<input type="checkbox" id="priva" value="" >Acepto la política de protección de datos y las condiciones del servicio.</input>
+									
+						</div>
+					</div>
+			
+			
+		
+			</div>
+				
+				<div class="pie">
+					<div id="menupie">
+						<div class="conoc">
+							<ul><h3>Conócenos</h3><br/>
+								<li><a href="index.html">Quiénes somos</a></li><br/>
+								<li><a href="quienessomos_historia.html">Historia</a></li><br/>
+								<li><a href="quienessomos_mundo.html">WF en el mundo</a></li><br/>
+							</ul>
+						</div>
+						<div class="proy">
+							<ul><h3>Proyectos</h3><br/>
+								<li><a href="proyectos_acuaticos.html">Sist. acuáticos</a></li><br/>
+								<li><a href="proyectos_terrestres.html">Sist. terrestres</a></li><br/>
+								<li><a href="proyectos_galeria.html">Galería</a></li><br/>
+								<li><a href="proyectos_ninos.html">Para niños</a></li><br/>
+							</ul>
+						</div>
+						<div class="infor">
+							<ul><h3>Infórmate</h3><br/>
+								<li><a href="informate_eventos.html">Eventos</a></li><br/>
+								<li><a href="informate_noticias.html">Noticias</a></li><br/>
+								<li><a href="informate_trabaja.html">Trabajo</a></li><br/>
+								<li><a href="informate_listaroja.html">Lista Roja IUCN</a></li><br/>
+								<li><a href="informate_faq.html">FAQ</a></li><br/>
+							</ul>
+							
+						</div>
+						<div class="colab">
+							<ul><h3>Colabora</h3><br/>
+								<li><a href="colabora_donaciones.html">Donaciones</a></li><br/>
+								<li><a href="colabora_voluntariado.html">Voluntariado</a></li><br/>
+								<li><a href="colabora_tienda.html">Tienda</a></li><br/>
+							</ul>
+						</div>
+						<div class="contac">
+							<ul><h3>Contacto</h3><br/>
+								<li><a href="contacto_cuentanos.php">Cuéntanos</a></li><br/>
+							</ul>
+						</div>
+					</div>
+					
+					<div id="btnspie">
+						<span id="aviso">Aviso legal</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span id="privacidad">Política de privacidad</span>
+						<div id="textoaviso">
+							<p>DATOS IDENTIFICATIVOS: En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, a continuación se reflejan los siguientes datos: La empresa titular de WildFriends (en adelante, el Site) es WildFriends S.L, con domicilio en C/Miguel Yuste, 40 - 28037 Madrid, con número de C.I.F: B-85635910, inscrita en el Registro Mercantil de Madrid en el tomo 26.455, folio 157, sección 8, hoja M-476760, inscripción 1.</p>
+							<p>USUARIOS: El acceso y/o uso de los portales de WildFriends atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de aplicación independientemente de las Condiciones Generales de Contratación que en su caso resulten de obligado cumplimiento.</p>
+
+							<p>USO DEL PORTAL: el Site de WildFriends proporciona el acceso a multitud de informaciones, servicios, programas o datos (en adelante, "los contenidos") en Internet pertenecientes a WildFriends o a sus licenciantes, a los que el USUARIO puede tener acceso. El USUARIO asume la responsabilidad del uso del Site. Dicha responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios o contenidos. En dicho registro el USUARIO será responsable de aportar información veraz y lícita. Como consecuencia de este registro, al USUARIO se le puede proporcionar una contraseña de la que será responsable, comprometiéndose a hacer un uso diligente y confidencial de la misma. El USUARIO se compromete a hacer un uso adecuado de los contenidos y servicios (como por ejemplo servicios de chat, foros de discusión o grupos de noticias) que WildFriends ofrece a través de su Site y con carácter enunciativo pero no limitativo, a no emplearlos para (i) incurrir en actividades ilícitas, ilegales o contrarias a la buena fe y al orden público; (ii) difundir contenidos o propaganda de carácter racista, xenófobo, pornográfico-ilegal, de apología del terrorismo o atentatorio contra los derechos humanos; (iii) provocar daños en los sistemas físicos y lógicos de WildFriends, de sus proveedores o de terceras personas, introducir o difundir en la red virus informáticos o cualesquiera otros sistemas físicos o lógicos que sean susceptibles de provocar los daños anteriormente mencionados; (iv) intentar acceder y, en su caso, utilizar las cuentas de correo electrónico de otros usuarios y modificar o manipular sus mensajes. WildFriends se reserva el derecho de retirar todos aquellos comentarios y aportaciones que vulneren el respeto a la dignidad de la persona, que sean discriminatorios, xenófobos, racistas, pornográficos, que atenten contra la juventud o la infancia, el orden o la seguridad pública o que, a su juicio, no resultaran adecuados para su publicación. En cualquier caso, WildFriends no será responsable de las opiniones vertidas por los usuarios a través de los foros, chats, u otras herramientas de participación.</p>
+
+							<p>PROTECCIÓN DE DATOS: WildFriends cumple con las directrices de la Ley Orgánica 15/1999 de 13 de diciembre de Protección de Datos de Carácter Personal, el Real Decreto 1720/2007 de 21 de diciembre por el que se aprueba el Reglamento de desarrollo de la Ley Orgánica y demás normativa vigente en cada momento, y vela por garantizar un correcto uso y tratamiento de los datos personales del usuario. Para ello, junto a cada formulario de recabo de datos de carácter personal, en los servicios que el USUARIO pueda solicitar a WildFriends, hará saber al USUARIO de la existencia y aceptación de las condiciones particulares del tratamiento de sus datos en cada caso, informándole de la responsabilidad del fichero creado, la dirección del responsable, la posibilidad de ejercer sus derechos de acceso, rectificación, cancelación u oposición, la finalidad del tratamiento y las comunicaciones de datos a terceros en su caso. Asimismo, WildFriends informa que da cumplimiento a la Ley 34/2002 de 11 de julio, de Servicios de la Sociedad de la Información y el Comercio Electrónico y le solicitará su consentimiento al tratamiento de su correo electrónico con fines comerciales en cada momento. </p></div>
+						<div id="textoprivacidad">
+							<p>Este sitio Web es propiedad de WildFriends, una organización española dedicada a conservación de la naturaleza.</p>
+							<p>La política de privacidad, y con ella este texto, es actualizada periódicamente para su adaptación a la normativa vigente y para la mejora de nuestros sistemas, por lo que recomendamos consultarla periódicamente.</p>
+							<p>El uso continuado de este sitio siguiendo la publicación de los cambios en la política de privacidad implica su aceptación.</p>
+							<p>• WildFriends solo recoge la información personal necesaria para el servicio que presta, solicitada de forma específica y facilitada por el usuario de forma voluntaria.<br/>
+							• WildFriends está comprometida con el cumplimiento de la normativa sobre privacidad y seguridad de datos personales.<br/>
+							• No venderemos o entregaremos tu información a otra organización externa a WildFriends, a menos que nos des autorización expresa y específica para hacerlo.<br/>
+							• Siempre te daremos la opción de terminar tu suscripción con nuestras listas de correo.<br/>
+							• Si tienes menos de 18 años de edad, deberás consultar con tus padres o tutores antes de registrarte en este sitio.</p>
+							<p>Privacidad de información<br/>
+								a) Información personal - como nombre, dirección, número telefónico, dirección de correo electrónico y fecha de nacimiento (donde sea apropiado). Recogemos esta información sólo en relación a actividades específicas. No es necesario que reveles este tipo de información si no lo deseas.<br/>
+
+								b) Información no personal. WildFriends recoge datos tales como direcciones IP (la ubicación del computador en Internet), páginas visitadas y archivos descargados. Esto nos ayuda a determinar cuántas personas usan nuestro sitio, cuántas personas nos visitan de forma regular, qué páginas son más populares y qué páginas lo son menos. Esta información no nos dice nada acerca de tu identidad, sólo nos permite administrar mejorar nuestro servicio.</p>
+							<p>La información personal enviada a través de los formularios en este sitio es almacenada sólo en una base de datos de WildFriends. Aseguramos que WildFriends no compartirá la información que nos entregues en este sitio con organización alguna externa a WildFriends, a menos que nos hayas permitido específicamente hacerlo.</p>
+							<p>Si eres menor de 14 años, necesitas obtener permiso de tus padres o tutores antes de enviar información personal (tu nombre, dirección, correo electrónico, etc.) a nosotros o cualquier otra persona a través de Internet. Animamos a los padres a involucrarse en el uso de Internet de sus hijos y a estar informados acerca de las actividades en las que están participando.</p>
+							<p>Tienes derecho, en cualquier momento, a acceder, pedir una copia de tu información, cancelar o rectificar sus datos, así como a oponerte a su tratamiento, rellenando el <a href="contacto_cuentanos.php">formulario<a> presente en nuestra página</p>
+							<p>Puede haber enlaces en este sitio Web que dirijan a otros sitios Web fuera de nuestro servicio. Cualquier enlace a sitios externos está previsto nada más que para tu referencia y conveniencia. La gestión y contenido de esos sitios está más allá de nuestro control, y no nos hacemos responsables de su contenido u otro material o cualquier producto o servicio publicitado o vendido a través de alguno de esos sitios Web. No seremos responsables bajo circunstancia alguna por daños, directos o indirectos, causados por cualquier uso de ese sitio Web externo vinculado a este sitio Web, seamos o no informados respecto a la posibilidad de esos daños.</p>
+
+							<p>Si tienes alguna pregunta respecto a nuestra política de privacidad, por favor <a href="contacto_cuentanos.php">contáctanos<a>.</p>
+							
+						</div>
+					</div>
+				</div>
+		</div>
+		
+	</body>
+
+</html>

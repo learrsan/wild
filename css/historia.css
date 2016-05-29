@@ -1,0 +1,55 @@
+﻿			.infod
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						padding: 20px;
+						padding-top: 50px;
+						text-align: justify;
+						float: left;
+						width: 530px;
+						height: 160px;
+						background-color: DarkKhaki;
+						
+						
+			}
+			.infoi
+			{
+						color: DarkOliveGreen;
+						font-size: 20px;
+						padding: 20px;
+						padding-top: 50px;
+						text-align: justify;
+						float: left; 
+						width: 530px;
+						height: 160px;
+						background-color: DarkKhaki;
+						
+			}
+			.imgi
+			{
+						background-color: DarkKhaki;
+						width: 365px;
+						height: 200px;
+						float: left;
+						padding-left: 65px;
+						padding-top: 30px;
+						
+			}
+			.imgd
+			{
+						background-color:DarkKhaki;
+						width: 365px;
+						height: 200px;
+						float: left;
+						padding-left: 65px;
+						padding-top: 30px;
+				
+			}
+#contenido1
+			{
+						width: 1000px;
+						height: 1000px;
+						background-color: DarkKhaki;
+				
+			}
+			
